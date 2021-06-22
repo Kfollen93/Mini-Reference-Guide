@@ -16,7 +16,22 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 
 ## Big O Notation
 <details>
-<summary>Big O Complexity Chart</summary>
+  <summary><b>Big O Complexity Chart</b></summary>
 <br>
 <img src=https://github.com/Kfollen93/Mini-Reference-Guide/blob/main/Images/BigOChart.png alt="Big O Complexity Chart">
 </details>
+
+<details>
+  <summary><b>O(1) Constant Time</b></summary>
+  O(1) is represented as "constant time". This means that regardless of the amount of data that is involved, whether it's 10,000 or 10, it will always require the same amount of time. <br>
+  <br>
+  An example of O(1) is:
+
+  ```cs
+  private int ReturnFirstElementInArray(int[] arr)
+  {
+    return arr[0];
+  }
+  ```
+</details>
+
