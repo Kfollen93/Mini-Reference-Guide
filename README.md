@@ -37,7 +37,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 
 <details>
   <summary><b>O(log n) Logarithmic Time</b></summary>
-  O(log n) is represented as "Logarithmic Time". This means that the time will increase linearly while n increases exponentially. It is most commonly seen with divide and conquer algorithms. You can think of it as when the input is being divded with each iteration, it is logarithmic time. <br>
+  O(log n) is represented as "Logarithmic Time". This means that the time will increase linearly while n increases exponentially. It is most commonly seen with divide and conquer algorithms. You can think of it as when the input is being divided in half with each iteration, it is logarithmic time. <br>
   <br>
   An example of O(log n) is:
 
@@ -78,11 +78,14 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
   An example of O(n) is:
 
   ```cs
-  private void PrintEveryElementInArray(int[] arr)
+  private int SearchForTargetIndex(int[] arr, int target)
   {
     for (int i = 0; i < arr.Length; i++)
     {
-      Console.WriteLine(arr[i]);
+      if (arr[i] == target)
+      {
+        return i;
+      }
     }
   }
   ```
