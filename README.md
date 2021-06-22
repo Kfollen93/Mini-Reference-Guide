@@ -65,7 +65,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
         leftPointer = mid + 1;
       }
     }
-    return -1; // Target does not exist.
+    return false; // Target does not exist.
   }
   ```
   It is worth noting that in the best case here, the time complexity could actually be O(1) if the mid point matches the target at the start. However, it is typical to measure time complexity based upon the worst case scenario, which in this case would be O(log n).
