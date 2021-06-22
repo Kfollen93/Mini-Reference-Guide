@@ -18,5 +18,5 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 <details>
 <summary>Big O Complexity Chart</summary>
 <br>
-Picture here.
+<img src=https://github.com/Kfollen93/Mini-Reference-Guide/blob/main/Images/BigOComplexity.PNG alt="Big O Complexity Chart">
 </details>
