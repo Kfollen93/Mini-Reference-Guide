@@ -7,7 +7,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 Therefore, if you found any of this useful, please consider giving it a star! :star:
 
 # Table of Contents  
-* Big O Notation                       --> <i>In progress</i> :hammer:
+* Big O Notation :o:                       --> <i>In progress</i> :hammer:
 * Generic Collections                  --> <i>In progress</i> :hammer:
 * Object-Oriented-Programming          --> <i>In progress</i> :hammer:
 * Common Sorting Algorithms            --> <i>In progress</i> :hammer:
