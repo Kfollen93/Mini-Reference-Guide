@@ -4,7 +4,8 @@ This repository represents a mini reference guide of topics I either search for 
 Since I have found it is best to learn by doing, this mini guide uses C# code examples that I have created myself in a way that make sense to me.
 After shuffling through my notes and erasing/re-writing these topics numerous times on my whiteboard, I figured it would be worth making this public and sharing with others. <br>
 
-Therefore, if you found any of this useful, please consider giving it a star! :star:
+Therefore, if you found any of this useful, please consider giving it a star! :star: <br>
+Furthermore, if you believe any example could be made clearer, please submit a pull request conforming with the style used below. :heavy_check_mark:
 
 # Table of Contents  
 * Big O Notation :o:                       --> <i>In progress</i> :hammer:
