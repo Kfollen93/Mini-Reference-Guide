@@ -30,7 +30,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
   ```cs
   private static int ReturnFirstElementInArray(int[] arr)
   {
-    return arr[0];
+      return arr[0];
   }
   ```
 </details>
@@ -45,27 +45,27 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
   // Binary Search in a sorted array
   private static int SearchForTargetIndex(int[] arr, int target)
   {
-    int leftPointer = 0;
-    int rightPointer = arr.Length - 1;
+      int leftPointer = 0;
+      int rightPointer = arr.Length - 1;
     
-    while (leftPointer <= rightPointer)
-    {
-      int mid = (leftPointer + rightPointer) / 2;
-      
-      if (arr[mid] == target)
+      while (leftPointer <= rightPointer)
       {
-        return mid;
+          int mid = (leftPointer + rightPointer) / 2;
+
+          if (arr[mid] == target)
+          {
+              return mid;
+          }
+          else if (target < arr[mid])
+          {
+              rightPointer = mid - 1;
+          }
+          else
+          {
+              leftPointer = mid + 1;
+          }
       }
-      else if (target < arr[mid])
-      {
-        rightPointer = mid - 1;
-      }
-      else
-      {
-        leftPointer = mid + 1;
-      }
-    }
-    return false; // Target does not exist.
+      return false; // Target does not exist.
   }
   ```
   It is worth noting that in the best case here, the time complexity could actually be O(1) if the mid point matches the target at the start. However, it is typical to measure time complexity based upon the worst case scenario, which in this case would be O(log n).
@@ -80,13 +80,13 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
   ```cs
   private static int SearchForTargetIndex(int[] arr, int target)
   {
-    for (int i = 0; i < arr.Length; i++)
-    {
-      if (arr[i] == target)
+      for (int i = 0; i < arr.Length; i++)
       {
-        return i;
+          if (arr[i] == target)
+          {
+            return i;
+          }
       }
-    }
   }
   ```
 </details>
