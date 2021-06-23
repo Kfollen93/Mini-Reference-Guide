@@ -28,7 +28,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
   An example of O(1) is:
 
   ```cs
-  private int ReturnFirstElementInArray(int[] arr)
+  private static int ReturnFirstElementInArray(int[] arr)
   {
     return arr[0];
   }
@@ -43,7 +43,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 
   ```cs
   // Binary Search in a sorted array
-  private int SearchForTargetIndex(int[] arr, int target)
+  private static int SearchForTargetIndex(int[] arr, int target)
   {
     int leftPointer = 0;
     int rightPointer = arr.Length - 1;
@@ -73,12 +73,12 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 
 <details>
   <summary><b>O(n) Linear Time</b></summary>
-  O(n) is represented as "Linear Time". This means that the amount of time it will take is directly proportional to the number (n) of elements. The larger the amount of data that is involved, the longer it will take to complete. <br>
+  O(n) is represented as "Linear Time". This means that the amount of time it will take is directly proportional to the number (<b><i>n</i></b>) of elements. The larger the amount of data that is involved, the longer it will take to complete. <br>
   <br>
   An example of O(n) is:
 
   ```cs
-  private int SearchForTargetIndex(int[] arr, int target)
+  private static int SearchForTargetIndex(int[] arr, int target)
   {
     for (int i = 0; i < arr.Length; i++)
     {
@@ -88,6 +88,107 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
       }
     }
   }
+  ```
+</details>
+  
+<details>
+  <summary><b>O(n log n) Linearithmic Time</b></summary>
+  O(n log n) is represented as "Linearithmic Time". I find it is easiest to understand this as an algorithm that performs O(log n) operations <b><i> n </i></b> times. <br>
+  <br>
+  An example of O(n) is:
+
+  ```cs
+private static int[] MergeSort(int[] nums)
+{
+    if (nums.Length <= 1) return nums; // Array is already sorted
+    int[] left;
+    int[] right;
+    int[] sorted = new int[nums.Length];
+
+    int mid = nums.Length / 2;
+
+    left = new int[mid]; // Sets the size of left
+
+    // if the array is even
+    if (nums.Length % 2 == 0)
+    {
+      right = new int[mid];
+    }
+    else // if the array is odd, then add one extra element to the right array
+    {
+      right = new int[mid + 1];
+    }
+
+    // Populating the left array -> Going from 0 to the mid point.
+    for (int i = 0; i < mid; i++)
+    {
+      left[i] = nums[i];
+    }
+
+    // Populating the right array -> Going from the mid point to the end of the array.
+    int j = 0;
+    for (int i = mid; i < nums.Length; i++)
+    {
+      right[j] = nums[i];
+      j++;
+    }
+
+    // Use recursion to sort the arrays
+    left = MergeSort(left);
+    right = MergeSort(right);
+
+    // Merge arrays - Call the Merge function
+    sorted = Merge(left, right);
+
+    return sorted;
+}
+
+public static int[] Merge(int[] left, int[] right)
+{
+    // Set the size of the sorted array
+    int sortedLength = left.Length + right.Length;
+    int[] sorted = new int[sortedLength];
+
+    int leftIndex = 0;
+    int rightIndex = 0;
+    int indexSorted = 0;
+
+    // While there's always at least one element in either array
+    while (leftIndex < left.Length || rightIndex < right.Length)
+    {
+      // If there's at least one element in BOTH arrays
+      if (leftIndex < left.Length && rightIndex < right.Length)
+      {
+          if (left[leftIndex] <= right[rightIndex])
+          {
+              sorted[indexSorted] = left[leftIndex];
+              leftIndex++;
+              indexSorted++;
+          }
+          else
+          {
+              sorted[indexSorted] = right[rightIndex];
+              rightIndex++;
+              indexSorted++;
+          }
+      }
+      // If only the left array has elements
+      else if (leftIndex < left.Length)
+      {
+            sorted[indexSorted] = left[leftIndex];
+            leftIndex++;
+            indexSorted++;
+      }
+      // If only the right array has elements
+      else if (rightIndex < right.Length)
+      {
+            sorted[indexSorted] = right[rightIndex];
+            rightIndex++;
+            indexSorted++;
+      }
+    }
+    return sorted;
+}
   ```
 </details>
 
