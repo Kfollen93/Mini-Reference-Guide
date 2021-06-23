@@ -84,7 +84,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
       {
           if (arr[i] == target)
           {
-            return i;
+              return i;
           }
       }
   }
