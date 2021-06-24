@@ -192,4 +192,31 @@ public static int[] Merge(int[] left, int[] right)
 }
   ```
 </details>
+  
+<details>
+  <summary><b>O(n^2) Quadratic Time</b></summary>
+  O(n^2) is represented as "Quadratic Time". You will most typically see this with nested loops (although do not fall victim to thinking if it is a nested loop that it is automatically Quadratic Time; this is not how you calculate time complexity). If you are looping through the outer array <b><i> n </i></b> times, then the inner loop will also need to run <b><i> n </i></b> times during each iteration of the outer loop.  <br>
+  <br>
+  An example of O(n^2) is:
+
+  ```cs
+  private static void SortArrayInPlace(int[] arr)
+  {
+      int temp;
+  
+      for (int i = 0; i < arr.Length; i++)
+      {
+          for (int j = i + 1; j < arr.Length; j++)
+          {
+              if (arr[j] < arr[i])
+              {
+                  temp = nums[j];
+                  nums[j] = nums[i];
+                  nums[i] = temp;
+              }
+          }
+      }
+  }
+  ```
+</details>
 
