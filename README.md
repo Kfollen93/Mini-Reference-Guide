@@ -96,7 +96,7 @@ Furthermore, if you believe any example could be made clearer, please submit a p
   <summary><b>O(n log n) Linearithmic Time</b></summary>
   O(n log n) is represented as "Linearithmic Time". I find it is easiest to understand this as an algorithm that performs O(log n) operations <b><i> n </i></b> times. <br>
   <br>
-  An example of O(n) is:
+  An example of O(n log n) is:
 
   ```cs
 private static int[] MergeSort(int[] nums)
