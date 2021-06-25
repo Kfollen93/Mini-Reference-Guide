@@ -219,4 +219,25 @@ public static int[] Merge(int[] left, int[] right)
   }
   ```
 </details>
+  
+<details>
+  <summary><b>O(2^n) Exponential Time</b></summary>
+  O(2^n) is represented as "Exponential Time". You will most likely see this with recursive functions that make two recursive calls, in order to solve a problem of size <b><i> n</i></b>.  <br>
+  <br>
+  An example of O(2^n) is:
+
+  ```cs
+  private static int Fibonacci(int n)
+  {
+      if (n < 2)
+      {
+          return n;
+      }
+      else
+      {
+         return Fibonacci(n - 1) + Fibonacci(n - 2);
+      }
+  }
+  ```
+</details>
 
