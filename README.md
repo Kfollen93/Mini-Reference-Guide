@@ -23,7 +23,7 @@ Furthermore, if you believe any example could be made clearer, please submit a p
 </details>
 
 <details>
-  <summary><b>O(1) Constant Time</b></summary>
+  <summary><b>O(1)</b></summary>
   O(1) is represented as "Constant Time". This means that regardless of the amount of data that is involved, whether it's 10,000 or 10, it will always require the same amount of time. <br>
   <br>
   An example of O(1) is:
@@ -37,7 +37,7 @@ Furthermore, if you believe any example could be made clearer, please submit a p
 </details>
 
 <details>
-  <summary><b>O(log n) Logarithmic Time</b></summary>
+  <summary><b>O(log n)</b></summary>
   O(log n) is represented as "Logarithmic Time". This means that the time will increase linearly while n increases exponentially. It is most commonly seen with divide and conquer algorithms. You can think of it as when the input is being divided in half with each iteration, it is logarithmic time. <br>
   <br>
   An example of O(log n) is:
@@ -73,7 +73,7 @@ Furthermore, if you believe any example could be made clearer, please submit a p
 </details>
 
 <details>
-  <summary><b>O(n) Linear Time</b></summary>
+  <summary><b>O(n)</b></summary>
   O(n) is represented as "Linear Time". This means that the amount of time it will take is directly proportional to the number (<b><i>n</i></b>) of elements. The larger the amount of data that is involved, the longer it will take to complete. <br>
   <br>
   An example of O(n) is:
@@ -93,7 +93,7 @@ Furthermore, if you believe any example could be made clearer, please submit a p
 </details>
   
 <details>
-  <summary><b>O(n log n) Linearithmic Time</b></summary>
+  <summary><b>O(n log n)</b></summary>
   O(n log n) is represented as "Linearithmic Time". I find it is easiest to understand this as an algorithm that performs O(log n) operations <b><i> n </i></b> times. <br>
   <br>
   An example of O(n log n) is:
@@ -194,7 +194,7 @@ public static int[] Merge(int[] left, int[] right)
 </details>
   
 <details>
-  <summary><b>O(n^2) Quadratic Time</b></summary>
+  <summary><b>O(n^2)</b></summary>
   O(n^2) is represented as "Quadratic Time". You will most typically see this with nested loops (although do not fall victim to thinking if it is a nested loop that it is automatically Quadratic Time; this is not how you calculate time complexity). If you are looping through the outer array <b><i> n </i></b> times, then the inner loop will also need to run <b><i> n </i></b> times during each iteration of the outer loop.  <br>
   <br>
   An example of O(n^2) is:
@@ -221,7 +221,7 @@ public static int[] Merge(int[] left, int[] right)
 </details>
   
 <details>
-  <summary><b>O(2^n) Exponential Time</b></summary>
+  <summary><b>O(2^n)</b></summary>
   O(2^n) is represented as "Exponential Time". You will most likely see this with recursive functions that make two recursive calls, in order to solve a problem of size <b><i> n</i></b>.  <br>
   <br>
   An example of O(2^n) is:
