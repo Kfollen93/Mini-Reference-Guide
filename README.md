@@ -8,7 +8,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 Furthermore, if you believe any example could be made clearer, please submit a pull request conforming with the style used below. :heavy_check_mark:
 
 # Table of Contents  
-* Big O Notation :o:                       --> <i>In progress</i> :hammer:
+* Big O Notation :o:
 * Generic Collections                  --> <i>In progress</i> :hammer:
 * Object-Oriented-Programming          --> <i>In progress</i> :hammer:
 * Common Sorting Algorithms            --> <i>In progress</i> :hammer:
