@@ -194,8 +194,8 @@ public static int[] Merge(int[] left, int[] right)
 </details>
   
 <details>
-  <summary><b>O(n^2)</b></summary>
-  O(n^2) is represented as "Quadratic Time". You will most typically see this with nested loops (although do not fall victim to thinking if it is a nested loop that it is automatically Quadratic Time; this is not how you calculate time complexity). If you are looping through the outer array <b><i> n </i></b> times, then the inner loop will also need to run <b><i> n </i></b> times during each iteration of the outer loop.  <br>
+  <summary><b>O(n<sup>2</sup></b>)</summary>
+  O(n<sup>2</sup>) is represented as "Quadratic Time". You will most typically see this with nested loops (although do not fall victim to thinking if it is a nested loop that it is automatically Quadratic Time; this is not how you calculate time complexity). If you are looping through the outer array <b><i> n </i></b> times, then the inner loop will also need to run <b><i> n </i></b> times during each iteration of the outer loop.  <br>
   <br>
   An example of O(n^2) is:
 
@@ -221,8 +221,8 @@ public static int[] Merge(int[] left, int[] right)
 </details>
   
 <details>
-  <summary><b>O(2^n)</b></summary>
-  O(2^n) is represented as "Exponential Time". You will most likely see this with recursive functions that make two recursive calls, in order to solve a problem of size <b><i> n</i></b>.  <br>
+  <summary><b>O(2<sup>n</sup></b>)</summary>
+  O(2<sup>n</sup>) is represented as "Exponential Time". You will most likely see this with recursive functions that make two recursive calls, in order to solve a problem of size <b><i> n</i></b>.  <br>
   <br>
   An example of O(2^n) is:
 
@@ -240,4 +240,3 @@ public static int[] Merge(int[] left, int[] right)
   }
   ```
 </details>
-
