@@ -240,3 +240,17 @@ public static int[] Merge(int[] left, int[] right)
   }
   ```
 </details>
+  
+<details>
+  <summary><b>O(n!)</b></summary>
+  O(n!) is represented as "Factorial Time". You are most likely to see this when writing algorithms that involve permutations. You should know that a factorial is the product of the sequence of <b><i> n</i></b> integers. <b><i>10!</i></b> is already 3,628,800.<br>
+  <br>
+  I do not have much experience solving common O(n!) algorithms, therefore instead of copying/pasting a solution I do not fully understand, I will share a couple common problems for you to review:
+
+  ```cs
+  Traveling Salesman
+  Generate all the Permutations of a List
+  ```
+
+
+</details>
