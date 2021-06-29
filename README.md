@@ -10,7 +10,7 @@ Furthermore, if you believe any example could be made clearer, please submit a p
 # Table of Contents  
 * Big O Notation :o:
 * Generic Collections                  --> <i>In progress</i> :hammer:
-* Object-Oriented-Programming          --> <i>In progress</i> :hammer:
+* Object Oriented Programming          --> <i>In progress</i> :hammer:
 * Common Sorting Algorithms            --> <i>In progress</i> :hammer:
 * Linked Lists                         --> <i>In progress</i> :hammer:
 * Binary Trees and Binary Search Trees --> <i>In progress</i> :hammer:
@@ -251,6 +251,14 @@ public static int[] Merge(int[] left, int[] right)
   Traveling Salesman
   Generate all the Permutations of a List
   ```
-
-
 </details>
+  
+## Generic Collections
+  
+## Object Oriented Programming
+  
+## Common Sorting Algorithms
+  
+## Linked Lists
+  
+## Binary Trees and Binary Search Trees
