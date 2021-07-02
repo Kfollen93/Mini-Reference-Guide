@@ -254,6 +254,30 @@ public static int[] Merge(int[] left, int[] right)
 </details>
   
 ## Generic Collections
+<details>
+  <summary><b>Dictionary</b></summary>
+  Stores items as a Key/Value pair.
+</details>
+
+<details>
+  <summary><b>List</b></summary>
+  Similar to an Array but able to add/remove items from it during run time.
+</details>
+  
+<details>
+  <summary><b>Queue</b></summary>
+  Stores items on First-in-First-out (FIFO) basis.
+</details>
+  
+<details>
+  <summary><b>Stack</b></summary>
+  Stores items on a Last-in-First-out (LIFO) basis.
+</details>
+  
+<details>
+  <summary><b>HashSet</b></summary>
+  Functions similar to a List by being able to add and remove items, however the main difference is that it can only store unique elements (no duplicates).
+</details>
   
 ## Object Oriented Programming
   
