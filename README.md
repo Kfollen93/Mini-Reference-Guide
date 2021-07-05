@@ -324,3 +324,11 @@ public static int[] Merge(int[] left, int[] right)
 ## Linked Lists
   
 ## Binary Trees and Binary Search Trees
+<details>
+  <summary><b>Binary Trees vs Binary Search Trees</b></summary>
+  The focus of this section will be specifically on Binary Search Trees, but I think it is important to have an understanding that Binary Trees and Binary Search Trees are different. <br>
+  <br>
+  I like to think of Binary Trees as a basic data structure, that involves a collection of nodes. The only rule for a Binary Tree is that a parent node can never have more than two children (hence "Binary"). Hierarchically, a Binary Search Tree shares the same structure as a Binary Tree, but the Binary Search Tree nodes are organized in a way where the left child only contains nodes with values less than the parent node, and the right child only contains nodes with values greater than (or equal) to the parent node. <br>
+  <br>
+  You can think of the Binary Tree as a more basic/general data stucture of a Binary Search Tree, but keeping in mind that they do differ. All Binary Search Trees are by definition a Binary Tree, but not all Binary Trees are Binary Search Trees. A Binary Search Tree is simply a variation of the Binary Tree, pertaining to how the nodes are organized.
+</details>
