@@ -341,3 +341,32 @@ public static int[] Merge(int[] left, int[] right)
 
 ```
 </details>
+  
+<details>
+  <br>
+  <summary><b>Basic Operations of a Binary Search Tree</b></summary>
+    <details>
+      <summary><b>Search</b></summary>
+      Search for an element in the tree.
+    </details>
+    <details>
+      <summary><b>Insert</b></summary>
+      Insert an element in the tree.
+    </details>
+    <details>
+      <summary><b>Delete</b></summary>
+      Delete an element in the tree.
+    </details>
+    <details>
+      <summary><b>Pre-order Traversal</b></summary>
+      Traverse the tree in pre-order. This means...
+    </details>
+    <details>
+      <summary><b>In-order Traversal</b></summary>
+      Traverse the tree in in-order. This means...
+    </details>
+    <details>
+      <summary><b>Post-order Traversal</b></summary>
+      Traverse the tree in post-order. This means...
+    </details>
+</details>
