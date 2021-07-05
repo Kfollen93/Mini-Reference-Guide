@@ -256,7 +256,45 @@ public static int[] Merge(int[] left, int[] right)
 ## Generic Collections
 <details>
   <summary><b>Dictionary</b></summary>
-  Stores items as a Key/Value pair.
+  Stores items as a Key/Value pair. I find using a Dictionary can be useful for when you need to add keys (keys must be unique), and be able to track the value for each key. Since the elements are stored as KeyValuePair objects, you can easily loop through the Dictionary to find the value of a key. <br>
+ <br>
+ An example of using a Dictionary is:
+  
+  ```cs
+    // Every element appears twice except for one element in nums (Example: nums = [4,1,2,1,2]). Find that single one.
+    public int SingleNumber(int[] nums)
+    {
+        // Create a Dictionary
+        Dictionary<int, int> dic = new Dictionary<int, int>();
+  
+        int value = 0;
+        
+        foreach (int i in nums)
+        {
+            // Loop through nums, and if the Dictionary does not already contain the key, then add it to the dictionary.
+            if (!dic.ContainsKey(i))
+            {
+                dic.Add(i, 1);
+            }
+            else
+            {   // Here, the key already exists, so instead I add 1 to the value for that key.
+                dic[i]++;
+            }
+        }
+        
+        // Loop through the K/V pair in the Dictionary, and check for when the Value is equal to one.
+        foreach (KeyValuePair<int, int> pair in dic)
+        {
+            if (pair.Value.Equals(1))
+            {
+                // Set value equal to the key that has a value of 1
+                value = pair.Key; 
+            }
+        }
+        // Returning value which is the key that had a value of 1.
+        return value;
+    }
+```
 </details>
 
 <details>
