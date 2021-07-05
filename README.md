@@ -334,10 +334,10 @@ public static int[] Merge(int[] left, int[] right)
   <br>
   
   ```
-                                          Binary Tree           Binary Search Tree
-                                             100                      102
-                                            /   \                    /   \
-                                          101    102               100   103
+                                      Binary Tree           Binary Search Tree
+                                         100                      102
+                                        /   \                    /   \
+                                      101    102               100   103
 
 ```
 </details>
