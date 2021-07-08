@@ -357,6 +357,21 @@ public static int[] Merge(int[] left, int[] right)
       <summary><b>Delete</b></summary>
       Delete an element in the tree.
     </details>
+</details>
+  
+<details>
+  <br>
+  <summary><b>Traversing a Tree</b></summary>
+    <details>
+      <summary><b>Breadth First Search (Level-order Traversal)</b></summary>
+      Breadth First Search, also known as Level-order Traversal, is...
+    </details>
+
+  
+<details>
+  <br>
+  <summary><b>Depth First Search</b></summary>
+  Depth First Search means... There are three popular ways to traverse a tree using DFS.
     <details>
       <summary><b>Pre-order Traversal</b></summary>
       Traverse the tree in pre-order. This means...
@@ -370,3 +385,4 @@ public static int[] Merge(int[] left, int[] right)
       Traverse the tree in post-order. This means...
     </details>
 </details>
+
