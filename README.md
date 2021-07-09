@@ -360,8 +360,48 @@ public static int[] Merge(int[] left, int[] right)
   <br>
     <details>
       <summary><b>Search</b></summary>
-      Search for an element in the tree.
-    </details>
+      Search for an element in the tree. <br>
+      This could be solved iteratively or recursively. Below is my example of searching for an element in a BST iteratively: <br>
+```cs
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left;
+ *     public TreeNode right;
+ *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+public class Solution 
+{
+    public TreeNode SearchBST(TreeNode root, int val) 
+    {
+        while (root != null)
+        {
+            if (root.val == val)
+            {
+                return root;
+            }
+            
+            if (val < root.val)
+            {
+                root = root.left;
+            }
+            else
+            {
+                root = root.right;
+            }
+        }
+        
+        return null;
+    }
+}
+```
+  </details>
     <details>
       <summary><b>Insert</b></summary>
       Insert an element in the tree.
