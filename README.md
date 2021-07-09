@@ -345,6 +345,19 @@ public static int[] Merge(int[] left, int[] right)
 <details>
   <br>
   <summary><b>Basic Operations of a Binary Search Tree</b></summary>
+  To my understanding, when working with BSTs, it is best to try to work with "Balanced" trees. A balanced BST is when the left and right subtrees only differ in height by at most one from every node. <br>
+ 
+```
+                                      Unbalanced BST         Balanced Binary Search Tree
+                                         103                     102
+                                        /                       /   \
+                                      102                     100    103
+                                      /
+                                    103
+
+```
+  The reason for working with a balanced BST, rather than an unbalanced BST, is that we can get the time complexity for Searching, Inserting and Deleting a node, all down to O(log n) (as opposed to the slower O(n) time complexity for an unbalanced BST).
+  <br>
     <details>
       <summary><b>Search</b></summary>
       Search for an element in the tree.
