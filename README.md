@@ -431,7 +431,9 @@ public class Solution
     </details>
  <details>
       <summary><b>In-order Traversal</b></summary>
-      Traverse the tree in In-order (Left, Root, Right). <br> This means you will first visit the left child (which includes its entire subtree), then visit the root node, and lastly visit the right child (also including its entire subtree). When performing In-order Traversal on a BST, this will result in all nodes being visited in ascending order.
+      Traverse the tree in In-order (Left, Root, Right). <br>
+   <br>
+   This means you will first visit the left child (which includes its entire subtree), then visit the root node, and lastly visit the right child (also including its entire subtree). When performing In-order Traversal on a BST, this will result in all nodes being visited in ascending order.
 A recursive example can be seen below: <br>
    
 ```cs
