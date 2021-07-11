@@ -429,10 +429,51 @@ public class Solution
       <summary><b>Pre-order Traversal</b></summary>
       Traverse the tree in pre-order. This means...
     </details>
-    <details>
+ <details>
       <summary><b>In-order Traversal</b></summary>
-      Traverse the tree in in-order. This means...
-    </details>
+      Traverse the tree in In-order (Left, Root, Right). <br> This means you will first visit the left child (which includes its entire subtree), then visit the root node, and lastly visit the right child (also including its entire subtree). When performing In-order Traversal on a BST, this will result in all nodes being visited in ascending order.
+A recursive example can be seen below: <br>
+   
+```cs
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left;
+ *     public TreeNode right;
+ *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+public class Solution 
+{
+    // Create a list to store the nodes
+    List<int> list = new List<int>();
+    
+    public IList<int> InorderTraversal(TreeNode root) 
+    {
+        InOrder(root);
+        return list;
+    }
+    
+    public void InOrder(TreeNode root)
+    {
+        // Base case for recursive call
+        if (root == null)
+        {
+            return;
+        }
+
+        InOrder(root.left);
+        list.Add(root.val);
+        InOrder(root.right);
+    }
+}
+```
+</details>
     <details>
       <summary><b>Post-order Traversal</b></summary>
       Traverse the tree in post-order. This means...
