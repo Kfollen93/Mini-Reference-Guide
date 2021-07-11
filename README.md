@@ -343,7 +343,7 @@ public static int[] Merge(int[] left, int[] right)
 </details>
   
 <details>
-  <br>
+  
   <summary><b>Basic Operations of a Binary Search Tree</b></summary>
   To my understanding, when working with BSTs, it is best to try to work with "Balanced" trees. A balanced BST is when the left and right subtrees only differ in height by at most one from every node. <br>
  
@@ -422,9 +422,9 @@ public class Solution
 
   
 <details>
-  <br>
+  
   <summary><b>Depth First Search</b></summary>
-  Depth First Search means... There are three popular ways to traverse a tree using DFS.
+  Depth First Search (DFS) is an algorithm used to traverse tree or graph structures. The algorithm starts at the root node, and then traverses are far as possible before backtracking. There are three commons ways to traverse a tree (or graph) in a DFS manner: Pre-Order, In-Order, and Post-Order.
     <details>
       <summary><b>Pre-order Traversal</b></summary>
       Traverse the tree in pre-order. This means...
