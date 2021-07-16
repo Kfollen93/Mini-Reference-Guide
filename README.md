@@ -431,7 +431,7 @@ public class Solution
       <br>
       This means you will first visit the root node, then visit the left child (which includes its entire subtree), and lastly visit the right child (also including its entire subtree). A recursive example can be seen below when combining two binary trees into one: <br>
       
-      ```cs
+```cs
       /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -460,7 +460,8 @@ public class Solution
     }
 }
 ```
-    </details>
+</details>
+  
  <details>
       <summary><b>In-order Traversal</b></summary>
       Traverse the tree in In-order (Left, Root, Right). <br>
