@@ -478,7 +478,7 @@ public class Solution
 </details>
     <details>
       <summary><b>Post-order Traversal</b></summary>
-      Traverse the tree in post-order. This means...
+      Traverse the tree in Post-order (Left, Right, Root).
     </details>
 </details>
 
