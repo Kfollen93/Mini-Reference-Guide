@@ -428,6 +428,38 @@ public class Solution
     <details>
       <summary><b>Pre-order Traversal</b></summary>
       Traverse the tree in Pre-order (Root, Left, Right). <br>
+      <br>
+      This means you will first visit the root node, then visit the left child (which includes its entire subtree), and lastly visit the right child (also including its entire subtree). A recursive example can be seen below when combining two binary trees into one: <br>
+      
+      ```cs
+      /**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left;
+ *     public TreeNode right;
+ *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+public class Solution 
+{
+    public TreeNode MergeTrees(TreeNode root1, TreeNode root2)
+    {
+        if (root1 == null) return root2;
+        if (root2 == null) return root1;
+        
+        root1.val += root2.val;
+        root1.left = MergeTrees(root1.left, root2.left);
+        root1.right = MergeTrees(root1.right, root2.right);
+        
+        return root1;
+    }
+}
+```
     </details>
  <details>
       <summary><b>In-order Traversal</b></summary>
