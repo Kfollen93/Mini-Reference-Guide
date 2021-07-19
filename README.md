@@ -299,7 +299,59 @@ public static int[] Merge(int[] left, int[] right)
 
 <details>
   <summary><b>List</b></summary>
-  Similar to an Array but able to add/remove items from it during run time.
+  Similar to an Array but able to add/remove items from it during run time. <br>
+  <br>
+  An example of using a List is:
+  
+  ```cs
+      public static void Main(string[] args)
+      {
+          List<int> myList = new List<int>();
+
+          myList.Add(1);
+          myList.Add(2);
+          myList.Add(3);
+          foreach (int i in myList)
+          {
+              Console.WriteLine(i);
+          }
+          Console.WriteLine("--------");
+
+          myList.Reverse();
+          foreach (int i in myList)
+          {
+              Console.WriteLine(i);
+          }
+          Console.WriteLine("--------");
+
+          myList.Remove(2);
+          foreach (int i in myList)
+          {
+              Console.WriteLine(i);
+          }
+          Console.WriteLine("--------");
+
+          Console.WriteLine("The index of number 3 is: " + myList.IndexOf(3));
+
+          Console.WriteLine(myList.ToArray());
+      }
+  
+      /*
+      1
+      2
+      3
+      --------
+      3
+      2
+      1
+      --------
+      3
+      1
+      --------
+      The index of number 3 is: 0
+      System.Int32[]
+      */
+```
 </details>
   
 <details>
