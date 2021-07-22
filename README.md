@@ -469,8 +469,43 @@ public class Solution
   <summary><b>Traversing a Tree</b></summary>
     <details>
       <summary><b>Breadth First Search (Level-order Traversal)</b></summary>
-      Breadth First Search (BFS), also known as Level-order Traversal, is when you a traverse a tree starting from the root node and then explore all the nodes at the current depth, before moving on to explore all the nodes at the next depth. I like to think of this as going from left to right as you explore the nodes at each level of the tree.
-    </details>
+      Breadth First Search (BFS), also known as Level-order Traversal, is when you a traverse a tree starting from the root node and then explore all the nodes at the current depth, before moving on to explore all the nodes at the next depth. I like to think of this as going from left to right as you explore the nodes at each level of the tree. <br>
+      <br>
+      An example to print out nodes in a Level-order traversal is: <br>
+      
+```cs
+    private void LevelOrderTraversal(Node root)
+    {
+        // Base Case
+        if (root == null) return;
+         
+        Queue<Node> q = new Queue<Node>();
+        q.Enqueue(root);
+         
+        while(true)
+        {
+            int nodeCount = q.Count;
+            if (nodeCount == 0) break;
+             
+            while(nodeCount > 0)
+            {
+                Node node = q.Peek();
+                // Now remove the current node
+                q.Dequeue();
+      
+                // Check for children nodes and Enqueue
+                if(node.left != null)
+                  q.Enqueue(node.left);
+                if(node.right != null)
+                    q.Enqueue(node.right);
+      
+                nodeCount--;
+            }
+        }
+    }
+      
+ ```  
+ </details>
 
   
 <details>
