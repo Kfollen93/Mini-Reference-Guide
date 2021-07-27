@@ -624,7 +624,9 @@ public class Solution
 </details>
     <details>
       <summary><b>Post-order Traversal</b></summary>
-      Traverse the tree in Post-order (Left, Right, Root).
+      Traverse the tree in Post-order (Left, Right, Root). Often used to delete a tree from leaf to root node. <br>
+      <br>
+      An example...
     </details>
 </details>
 
