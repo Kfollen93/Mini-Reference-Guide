@@ -540,7 +540,7 @@ public class Solution
   Depth First Search (DFS) is an algorithm used to traverse tree or graph structures. The algorithm starts at the root node, and then traverses are far as possible before backtracking. There are three commons ways to traverse a tree (or graph) in a DFS manner: Pre-Order, In-Order, and Post-Order.
     <details>
       <summary><b>Pre-order Traversal</b></summary>
-      Traverse the tree in Pre-order (Root, Left, Right). You will often use this traversal when you want to create a copy of a tree. <br>
+      Traverse the tree in Pre-order (Root, Left, Right). You could use this traversal when you want to create a copy of a binary search tree. <br>
       <br>
       This means you will first visit the root node, then visit the left child (which includes its entire subtree), and lastly visit the right child (also including its entire subtree). A recursive example can be seen below when combining two binary trees into one: <br>
       
@@ -577,7 +577,7 @@ public class Solution
   
  <details>
       <summary><b>In-order Traversal</b></summary>
-      Traverse the tree in In-order (Left, Root, Right). Often used to get the values of nodes from a tree in ascending order. <br>
+      Traverse the tree in In-order (Left, Root, Right). Often used to get the values of nodes from a tree in ascending order (with a BST). <br>
    <br>
    This means you will first visit the left child (which includes its entire subtree), then visit the root node, and lastly visit the right child (also including its entire subtree). When performing In-order Traversal on a BST, this will result in all nodes being visited in ascending order.
 A recursive example can be seen below: <br>
