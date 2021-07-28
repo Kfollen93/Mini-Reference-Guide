@@ -558,6 +558,7 @@ public class Solution
  *     }
  * }
  */
+      
 public class Solution 
 {
     public TreeNode MergeTrees(TreeNode root1, TreeNode root2)
@@ -596,6 +597,7 @@ A recursive example can be seen below: <br>
  *     }
  * }
  */
+   
 public class Solution 
 {
     // Create a list to store the nodes
@@ -629,6 +631,20 @@ public class Solution
       An example of traversing and outputting the nodes of a tree in Post-order is:
       
 ```cs
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left;
+ *     public TreeNode right;
+ *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+      
 public class Solution
 {
     List<int> list = new List<int>();
