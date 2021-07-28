@@ -626,7 +626,30 @@ public class Solution
       <summary><b>Post-order Traversal</b></summary>
       Traverse the tree in Post-order (Left, Right, Root). Often used to delete a tree from leaf to root node. <br>
       <br>
-      An example...
-    </details>
+      An example of traversing and outputting the nodes of a tree in Post-order is:
+      
+```cs
+public class Solution
+{
+    List<int> list = new List<int>();
+
+    public IList<int> PostorderTraversal(TreeNode root)
+    {
+        PostOrder(root);
+        return list;
+    }
+
+    private void PostOrder(TreeNode root)
+    {
+        // Base case
+        if (root == null) return;
+
+        PostOrder(root.left);
+        PostOrder(root.right);
+        list.Add(root);
+    }
+}
+```
+  </details>
 </details>
 
