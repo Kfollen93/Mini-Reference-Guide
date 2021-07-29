@@ -5,7 +5,6 @@ Since I have found it is best to learn by doing, this mini guide uses C# code ex
 After shuffling through my notes and erasing/re-writing these topics numerous times on my whiteboard, I figured it would be worth making this public and sharing with others. <br>
 
 Therefore, if you found any of this useful, please consider giving it a star! :star: <br>
-Furthermore, if you believe any example could be made clearer, please submit a pull request conforming with the style used below. :heavy_check_mark:
 
 # Table of Contents  
 * Big O Notation :o:
