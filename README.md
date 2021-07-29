@@ -500,35 +500,35 @@ public class Solution
       An example to print out nodes in a Level-order traversal is: <br>
       
 ```cs
-    private void LevelOrderTraversal(Node root)
+private void LevelOrderTraversal(Node root)
+{
+    // Base Case
+    if (root == null) return;
+
+    Queue<Node> q = new Queue<Node>();
+    q.Enqueue(root);
+
+    while(true)
     {
-        // Base Case
-        if (root == null) return;
-         
-        Queue<Node> q = new Queue<Node>();
-        q.Enqueue(root);
-         
-        while(true)
+        int nodeCount = q.Count;
+        if (nodeCount == 0) break;
+
+        while(nodeCount > 0)
         {
-            int nodeCount = q.Count;
-            if (nodeCount == 0) break;
-             
-            while(nodeCount > 0)
-            {
-                Node node = q.Peek();
-                // Now remove the current node
-                q.Dequeue();
-      
-                // Check for children nodes and Enqueue
-                if(node.left != null)
-                  q.Enqueue(node.left);
-                if(node.right != null)
-                    q.Enqueue(node.right);
-      
-                nodeCount--;
-            }
+            Node node = q.Peek();
+            // Now remove the current node
+            q.Dequeue();
+
+            // Check for children nodes and Enqueue
+            if(node.left != null)
+              q.Enqueue(node.left);
+            if(node.right != null)
+                q.Enqueue(node.right);
+
+            nodeCount--;
         }
-    }   
+    }
+}   
  ```  
  </details>
 
