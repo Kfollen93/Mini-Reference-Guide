@@ -528,8 +528,7 @@ public class Solution
                 nodeCount--;
             }
         }
-    }
-      
+    }   
  ```  
  </details>
 
