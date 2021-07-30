@@ -386,7 +386,52 @@ public static int[] Merge(int[] left, int[] right)
   
 <details>
   <summary><b>Stack</b></summary>
-  Stores items on a Last-in-First-out (LIFO) basis.
+  Stores items on a Last-in-First-out (LIFO) basis. Some important methods of a Stack are: Peek() which returns the object at the top of the Stack without removing it, Pop() which removes and returns the object at the top of the Stack, and Push() which inserts an object at the top of the Stack. <br>
+  <br>
+  I find myself frequently using Stacks when implementing an iterative approach during a tree traversal, an example being:
+  
+  ```cs
+  /**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left;
+ *     public TreeNode right;
+ *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+public class Solution
+{
+    public IList<int> InorderTraversal(TreeNode root) 
+    {
+        List<int> list = new List<int>();
+        if (root == null) return list;
+        
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        
+        while (stack.Count != 0 || root != null)
+        {
+            if (root != null)
+            {
+                stack.Push(root);
+                root = root.left;
+            }
+            else
+            {
+                root = stack.Pop();
+                list.Add(root.val);
+                root = root.right;
+            }
+        }
+        
+        return list;
+    }
+}
+```
 </details>
   
 <details>
