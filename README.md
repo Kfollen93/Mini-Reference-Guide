@@ -441,7 +441,7 @@ public class Solution
   
 <details>
   <summary><b>HashSet</b></summary>
-  Functions similar to a List by being able to add and remove items, however the main difference is that it can only store unique elements (no duplicates).
+  Functions similar to a List by being able to add and remove items, however the main difference is that it can only store unordered unique elements (no duplicates).
 </details>
   
 ## Object Oriented Programming
