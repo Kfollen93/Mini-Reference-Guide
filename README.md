@@ -355,30 +355,35 @@ public static int[] Merge(int[] left, int[] right)
   
 <details>
   <summary><b>Queue</b></summary>
-  Stores items on First-in-First-out (FIFO) basis. <br>
+  Stores items on First-in-First-out (FIFO) basis. You can remember how a Queue works by thinking of waiting in a line. The person at the front of the line, will be first the first person out of the line. <br>
   <br>
   An example of a using a Queue is:
   
 ```cs
     static void Main(string[] args)
     {
-        Queue myQueue = new Queue<int>();
+        Queue<int> myQueue = new Queue<int>();
   
         myQueue.Enqueue(1);
         myQueue.Enqueue(2);
         myQueue.Enqueue(3);
         myQueue.Enqueue(4);
         myQueue.Dequeue();
+        myQueue.Peek();
   
         foreach(int i in myQueue)
         {
             Console.WriteLine(i);
         }
   
+        Console.WriteLine(myQueue.Peek());
+  
       /* Output:
          2
          3
          4
+         
+         2 // Peek() returns the object at the beginning of the Queue without removing it
       */
     }
   ```
