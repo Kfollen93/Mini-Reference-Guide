@@ -8,7 +8,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 
 # Table of Contents  
 * Big O Notation :o:
-* Generic Collections                  --> <i>In progress</i> :hammer:
+* Generic Collections :wrench:
 * Object Oriented Programming          --> <i>In progress</i> :hammer:
 * Common Sorting Algorithms            --> <i>In progress</i> :hammer:
 * Linked Lists                         --> <i>In progress</i> :hammer:
