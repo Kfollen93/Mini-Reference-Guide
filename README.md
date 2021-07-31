@@ -441,7 +441,42 @@ public class Solution
   
 <details>
   <summary><b>HashSet</b></summary>
-  Functions similar to a List by being able to add and remove items, however the main difference is that it can only store unordered unique elements (no duplicates). You can also use similar properties and functions with a HashSet that you can with a List such as Count(), Add(), and Remove().
+  Functions similar to a List by being able to add and remove items, however the main difference is that it can only store unordered unique elements (no duplicates). You can also use similar properties and functions with a HashSet that you can with a List such as Count(), Add(), and Remove(). <br>
+  <br>
+An example of using a HashSet is:
+  
+```cs
+    public static void Main(string[] args)
+    {
+
+    HashSet<int> hash = new HashSet<int>();
+
+    hash.Add(1);
+    hash.Add(2);
+    hash.Add(3);
+    hash.Add(3); // NOTE: This 3 is not added since it's duplicative.
+    foreach (int i in hash)
+    {
+        Console.WriteLine(i);
+    }
+    Console.WriteLine("--------");
+
+    hash.Remove(2);
+    foreach (int i in hash)
+    {
+        Console.WriteLine(i);
+    }
+
+    /*
+    1
+    2
+    3
+    --------
+    1
+    3
+    */
+    }
+```
 </details>
   
 ## Object Oriented Programming
