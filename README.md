@@ -446,8 +446,8 @@ public class Solution
 An example of using a HashSet is:
   
 ```cs
-    public static void Main(string[] args)
-    {
+  public static void Main(string[] args)
+  {
 
     HashSet<int> hash = new HashSet<int>();
 
@@ -475,7 +475,7 @@ An example of using a HashSet is:
     1
     3
     */
-    }
+  }
 ```
 </details>
   
