@@ -11,7 +11,6 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 * Generic Collections :wrench:
 * Object Oriented Programming          --> <i>In progress</i> :hammer:
 * Common Sorting Algorithms            --> <i>In progress</i> :hammer:
-* Linked Lists                         --> <i>In progress</i> :hammer:
 * Binary Trees and Binary Search Trees --> <i>In progress</i> :hammer:
 
 ## Big O Notation
@@ -475,6 +474,43 @@ An example of using a HashSet is:
     1
     3
     */
+  }
+```
+</details>
+  
+<details>
+  <summary><b>Linked List</b></summary>
+  Linked Lists are worth reading into further than this brief summary, as they are often used in interview questions and they can be a bit tricky to understand. Linked Lists provide O(1) insertion and removal operations. <br>
+  <br>
+An example of using a Linked List is:
+  
+```cs
+  /**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     public ListNode(int val=0, ListNode next=null) {
+ *         this.val = val;
+ *         this.next = next;
+ *     }
+ * }
+ */
+  public class Solution 
+  {
+      public ListNode ReverseList(ListNode head)
+      {
+          ListNode prev = null;
+
+          while (head != null)
+          {
+              ListNode temp = head;
+              head = head.next;
+              temp.next = prev; // Turns the pointer backwards
+              prev = temp;
+          } 
+          return prev;
+      }
   }
 ```
 </details>
