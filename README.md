@@ -525,8 +525,6 @@ An example of using a Linked List is:
   
 ## Common Sorting Algorithms
   
-## Linked Lists
-  
 ## Binary Trees and Binary Search Trees
 <details>
   <summary><b>Binary Trees vs Binary Search Trees</b></summary>
