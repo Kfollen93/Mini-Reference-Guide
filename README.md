@@ -687,7 +687,8 @@ public class Solution
 </details>
     <details>
       <summary><b>Delete</b></summary>
-      Delete an element in the tree.
+      Delete an element in the tree. <br>
+      This is by far the most complex operation to do when it comes to the three (Search, Insert, and Delete). This is because there are three conditions that you must check for when wanting to delete a node.
     </details>
 </details>
   
