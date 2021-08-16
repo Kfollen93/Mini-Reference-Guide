@@ -11,7 +11,7 @@ Therefore, if you found any of this useful, please consider giving it a star! :s
 * Generic Collections :wrench:
 * Object Oriented Programming          --> <i>In progress</i> :hammer:
 * Common Sorting Algorithms            --> <i>In progress</i> :hammer:
-* Binary Trees and Binary Search Trees --> <i>In progress</i> :hammer:
+* Binary Trees and Binary Search Trees :evergreen_tree:
 
 ## Big O Notation
 <details>
