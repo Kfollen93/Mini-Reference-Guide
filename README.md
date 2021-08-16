@@ -689,6 +689,7 @@ public class Solution
       <summary><b>Delete</b></summary>
       Delete an element in the tree. <br>
       This is by far the most complex operation to do when it comes to the three (Search, Insert, and Delete). This is because there are three conditions that you must check for when wanting to delete a node. <br>
+      <br>
       First condition to check: If the node doesn't have any children. <br>
       Second condition to check: If the node has one child (left or right). <br>
       Third condition to check: If the node has two children. <br>
