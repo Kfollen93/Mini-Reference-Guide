@@ -696,8 +696,78 @@ public class Solution
       <br>
       An example of deleting a node from a BST can be seen below: <br>
       
-      
-    </details>
+```cs
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left;
+ *     public TreeNode right;
+ *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+public class Solution 
+{ 
+    public TreeNode DeleteNode(TreeNode root, int key) 
+    {
+        if (root == null) return null;
+        
+        if (key < root.val)
+        {
+            root.left =  DeleteNode(root.left, key);
+        }  
+        else if (key > root.val )
+        {
+            root.right =  DeleteNode(root.right, key);
+        }
+        else // Here we've found the node that we need to delete.
+        {
+            root = DeleteFoundNode(root,key); 
+        }
+        
+        return root;
+    }
+    
+    public TreeNode DeleteFoundNode(TreeNode root, int key) 
+    {
+        if (root.right == null && root.left == null) // 1. Node has no children.
+        {
+            root = null;
+        }
+        else if (root.right == null) // 2. Node has one child either right or left.
+        {
+            root = root.left;
+        }
+        else if (root.left == null)
+        {
+            root = root.right;
+        }   
+        else // 3. Node has two children.
+        {
+            TreeNode minNode = FindMinValue(root.right);
+            root.val = minNode.val;
+            root.right = DeleteNode(root.right, minNode.val);
+        }
+        
+        return root;        
+    }
+    
+    public TreeNode FindMinValue(TreeNode root)
+    {
+        while (root.left != null)
+        {
+            root = root.left;
+        }
+        
+        return root;
+    }
+}
+```
+   </details>
 </details>
   
 <details>
