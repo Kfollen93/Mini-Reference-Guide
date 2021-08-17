@@ -548,6 +548,7 @@ An example of using a Linked List is:
   
   <summary><b>Basic Operations of a Binary Search Tree</b></summary>
   To my understanding, when working with BSTs, it is best to try to work with "Balanced" trees. A balanced BST is when the left and right subtrees only differ in height by at most one from every node. <br>
+  <br>
  
 ```
                                     Unbalanced BST         Balanced Binary Search Tree
