@@ -564,7 +564,7 @@ An example of using a Linked List is:
     <details>
       <summary><b>Search</b></summary>
       Search for an element in the tree. <br>
-      This could be solved iteratively or recursively. Below is my example of searching for an element in a BST iteratively: <br>
+      This could be solved iteratively or recursively. Below is my example of searching for an element in a BST iteratively:
 ```cs
 /**
  * Definition for a binary tree node.
