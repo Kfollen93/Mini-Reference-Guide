@@ -524,7 +524,8 @@ An example of using a Linked List is:
 ## Object Oriented Programming
  <details>
     <summary><b>Overview</b></summary>
-  Object Oriented Programming (OOP) is a programming style that focuses on the use of classes and objects. You will commonly hear this structure used with examples such as the code classes being blueprints that build instances of objects. The class is often a broad category, that will then share attributes, but the objects themselves will have their own values. An example that I originally learned this from was a car program. Imagine you have a class named <code>Car</code>, and it has the attributes of: <code>model</code>, <code>color</code>, <code>year</code>. We could then give the Car class a method as well, such as, <code>ChangeColor();</code>. After that we would make the instance of the object.
+  Object Oriented Programming (OOP) is a programming style that focuses on the use of classes and objects. You will commonly hear this structure used with examples such as the code classes being blueprints that build instances of objects. The class is often a broad category, that will then share attributes, but the objects themselves will have their own values. An example that I originally learned this from was a car program. Imagine you have a class named <code>Car</code>, and it has the attributes of: <code>model</code>, <code>color</code>, <code>year</code>. We could then give the Car class a method as well, such as, <code>ChangeColor();</code>. After that we would make the instance of the object. <br>
+   <br>
   There are four pillars of OOP, which are: Encapsulation, Abstraction, Inheritance, and Polymorphism.
  </details>
   
