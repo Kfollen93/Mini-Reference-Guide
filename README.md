@@ -529,6 +529,10 @@ An example of using a Linked List is:
   There are four pillars of OOP, which are: Encapsulation, Abstraction, Inheritance, and Polymorphism.
  </details>
   
+ <details>
+   <summary><b>Encapsulation</b></summary>
+ </details>
+  
 ## Common Sorting Algorithms
   
 ## Binary Trees and Binary Search Trees
