@@ -533,6 +533,18 @@ An example of using a Linked List is:
    <summary><b>Encapsulation</b></summary>
  </details>
   
+ <details>
+   <summary><b>Inheritance</b></summary>
+ </details>
+  
+ <details>
+   <summary><b>Abstraction</b></summary>
+ </details>
+  
+ <details>
+   <summary><b>Polymorphism</b></summary>
+ </details>
+  
 ## Common Sorting Algorithms
   
 ## Binary Trees and Binary Search Trees
