@@ -534,11 +534,11 @@ An example of using a Linked List is:
  </details>
   
  <details>
-   <summary><b>Inheritance</b></summary>
+   <summary><b>Abstraction</b></summary>
  </details>
   
  <details>
-   <summary><b>Abstraction</b></summary>
+   <summary><b>Inheritance</b></summary>
  </details>
   
  <details>
