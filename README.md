@@ -531,6 +531,7 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Encapsulation</b></summary>
+   Encapsulation uses public/private modifiers to restrict what values can (and can not) be accessed.
  </details>
   
  <details>
