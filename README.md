@@ -540,6 +540,7 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Inheritance</b></summary>
+   Child classes inherit data and behaviors from parent class.
  </details>
   
  <details>
