@@ -531,7 +531,7 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Encapsulation</b></summary>
-   Encapsulation uses public/private modifiers to restrict what values can (and can not) be accessed.
+   Encapsulation uses public/private modifiers to restrict what attributes can (and can not) be accessed. Attributes of the class are kept private and public getter and setter methods are provided to manipulate these attributes.
  </details>
   
  <details>
