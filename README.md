@@ -547,9 +547,17 @@ An example of using a Linked List is:
    <summary><b>Polymorphism</b></summary>
  </details>
   
-## Common Sorting Algorithms
+## Common Searching/Sorting Algorithms
  <details>
    <summary><b>Binary Search</b></summary>
+ </details>
+  
+ <details>
+   <summary><b>Merge Sort</b></summary>
+ </details>
+  
+ <details>
+   <summary><b>Quick Sort</b></summary>
  </details>
   
 ## Binary Trees and Binary Search Trees
