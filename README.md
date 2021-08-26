@@ -548,6 +548,9 @@ An example of using a Linked List is:
  </details>
   
 ## Common Sorting Algorithms
+ <details>
+   <summary><b>Binary Search</b></summary>
+ </details>
   
 ## Binary Trees and Binary Search Trees
 <details>
