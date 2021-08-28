@@ -481,7 +481,7 @@ An example of using a HashSet is:
 <details>
   <summary><b>Linked List</b></summary>
   Linked Lists are worth reading into further than this brief summary, as they are often used in interview questions and they can be a bit tricky to understand. Linked Lists provide O(1) insertion and removal operations. <br>
-  You can visualize a Linked List as list that contains nodes and each node conatains a value and pointer (the link) to the next node within the list. <br>
+  You can visualize a Linked List as a list that contains nodes and each node contains a value and pointer (the link) to the next node within the list. <br>
   <br>
   
   ```
