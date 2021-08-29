@@ -537,10 +537,10 @@ An example of using a Linked List is:
  class Enemy
 {
     private string name;
-    public string Name
+    public string Name // Property
     {
-        get { return name; }
-        set { name = value; }
+        get { return name; } // get accessor which returns the value of the Name property
+        set { name = value; } // set accessor to set a new value. The value keyword represents the value being assigned to the property.
     }
 }
 ```
