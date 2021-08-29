@@ -544,6 +544,18 @@ An example of using a Linked List is:
     }
 }
 ```
+```cs
+class Program
+ {
+    static void Main(string[] args)
+    {
+        Enemy enemy = new Enemy();
+        enemy.Name = "Bowser"; // set accessor will invoke
+        Console.WriteLine(enemy.Name); // get accessor will invoke
+    }
+ }
+```
+   
  </details>
   
  <details>
