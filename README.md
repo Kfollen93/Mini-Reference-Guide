@@ -545,7 +545,7 @@ An example of using a Linked List is:
 }
 ```
 ```cs
-class Program
+  class Program
  {
     static void Main(string[] args)
     {
@@ -574,6 +574,35 @@ class Program
 ## Common Searching/Sorting Algorithms
  <details>
    <summary><b>Binary Search</b></summary>
+   Binary Search is a fast algorithm to find a value in a sorted array (or any sorted sequence). The algorithm works by initially searching entire sequence. At each step, the algorithm compares the median value in the search space to the target value. Due to the sequence being sorted, it can then eliminate half of the search space. By doing this repeatedly, it will eventually be left with a search space consisting of a single element, the target value/index, or we can return out of the function if the target does not exist at this point.
+
+```cs
+// Binary Search in a sorted array
+  private static int SearchForTargetIndex(int[] arr, int target)
+  {
+      int leftPointer = 0;
+      int rightPointer = arr.Length - 1;
+    
+      while (leftPointer <= rightPointer)
+      {
+          int mid = (leftPointer + rightPointer) / 2;
+
+          if (arr[mid] == target)
+          {
+              return mid;
+          }
+          else if (target < arr[mid])
+          {
+              rightPointer = mid - 1;
+          }
+          else
+          {
+              leftPointer = mid + 1;
+          }
+      }
+      return false; // Target does not exist.
+  }
+```
  </details>
   
  <details>
