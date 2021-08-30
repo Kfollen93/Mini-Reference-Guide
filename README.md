@@ -531,7 +531,7 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Encapsulation</b></summary>
-   Encapsulation uses public/private modifiers to restrict what attributes can (and can not) be accessed. Attributes of the class are often kept private and public get and set accessors are provided to manipulate these attributes.
+   Encapsulation uses public/private modifiers to restrict what attributes can (and can not) be accessed. Attributes of the class are often kept private and public get and set accessors are provided to manipulate these attributes. Proper use of Encapsulation will help us avoid breaking things that are not related to the change we are making, increase readability and maintainability, and reduce complexity by means of decoupling.
    
  ```cs
  class Enemy
