@@ -1088,7 +1088,7 @@ public class Solution
 </details>
     <details>
       <summary><b>Post-order Traversal</b></summary>
-      Traverse the tree in Post-order (Left, Right, Root). If you know you will need to explore all the leaves before any nodes, then Post-Order will be the fastest. <br>
+      Traverse the tree in Post-order (Left, Right, Root). If you know you will need to explore all the leaves before any root nodes, then Post-Order will be the fastest. <br>
       <br>
       An example of traversing and outputting the nodes of a tree in Post-order is:
       
