@@ -740,6 +740,26 @@ public static void Swap(int[] arr, int index, int i)
       arr[index] = arr[i];
       arr[i] = temp;
 }
+
+/*
+
+Driver code to set up and print the sorted array
+
+public static void Main(string[] args)
+{
+
+     int[] arr = {2, 6, 5, 3, 8, 7, 1, 0};
+     int startOfArr = 0;
+     int endOfArr = arr.Length - 1;
+
+     QuickSort(arr, startOfArr, endOfArr);
+     foreach (int i in arr)
+     {
+         Console.WriteLine(i); // 0 1 2 3 5 6 7 8
+     }
+}
+
+*/ 
 ```
  </details>
   
