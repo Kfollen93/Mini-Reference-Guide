@@ -704,6 +704,43 @@ public static int[] Merge(int[] left, int[] right)
   
  <details>
    <summary><b>Quick Sort</b></summary>
+   
+   ```cs
+ public static void QuickSort(int[] arr, int low, int high)
+        {  
+            if (low < high)
+            {
+                int pivotLocation = Partition(arr, low, high);
+                QuickSort(arr, low, pivotLocation - 1);
+                QuickSort(arr, pivotLocation + 1, high);
+            }
+        }
+        
+        public static int Partition(int[] arr, int low, int high)
+        {
+            int pivot = arr[high];
+            int index = (low - 1);
+            
+            for (int i = low; i <= high - 1; i++)
+            {
+                if (arr[i] < pivot)
+                {
+                    index++;
+                    Swap(arr, index, i);
+                }
+            }
+            
+            Swap(arr, index + 1, high);
+            return (index + 1);
+        }
+        
+        public static void Swap(int[] arr, int index, int i)
+        {
+            int temp = arr[index];
+            arr[index] = arr[i];
+            arr[i] = temp;
+        }
+```
  </details>
   
 ## Binary Trees and Binary Search Trees
