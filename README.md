@@ -704,7 +704,7 @@ public static int[] Merge(int[] left, int[] right)
   
  <details>
    <summary><b>Quick Sort</b></summary>
-   Quick Sort is another divide and conquer algorithm. It works by choosing an element as a pivot point, and then partitioning the array around that pivot point so that elements that are smaller than the pivot point are before it, and elements larger than it are after it. Through recursion, we repeat this partition until the array is sorted. Although you could select any element as the pivot point, but it is common to choose the median value from the first, last, and middle element of the array.
+   Quick Sort is another divide and conquer algorithm. It works by choosing an element as a pivot point, and then partitioning the array around that pivot point so that elements that are smaller than the pivot point are before it, and elements larger than it are after it. Through recursion, we repeat this partition until the array is sorted. Although you could select any element as the pivot point, it is common to choose the median value from the first, last, and middle element of the array. The worst case time complexity of Quick Sort is <b>O(n<sup>2</sup></b>), but the average time complexity (and best) is <b>O(n log n)</b>; however, the space complexity is only <b>O(n)</b>.
    
    ```cs
 public static void QuickSort(int[] arr, int low, int high)
