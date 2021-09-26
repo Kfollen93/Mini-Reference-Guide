@@ -605,7 +605,7 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Merge Sort</b></summary>
-   Merge Sort is a divide and conquer algorithm that works by breaking an array down into several smaller sub-arrays until each sub array consists of a single element, and then merges them back into a final sorted array. The time complexity of the Merge Sort algorithm is <b>O(n log n)</b>.
+   Merge Sort is a divide and conquer algorithm that works by breaking an array down into several smaller sub-arrays until each sub array consists of a single element, and then merges them back into a final sorted array. The time complexity of the Merge Sort algorithm is <b>O(n log n)</b>, and space complexity is <b>O(n)</b>..
    
 ```cs
 private static int[] MergeSort(int[] nums)
