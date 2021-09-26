@@ -605,7 +605,7 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Merge Sort</b></summary>
-   Merge Sort is a divide and conquer algorithm that works by breaking an array down into several smaller sub-arrays until each sub array consists of a single element, and then merges them back into a final sorted array. The time complexity of the Merge Sort algorithm is <b>O(n log n)</b>, and space complexity is <b>O(n)</b>.
+   Merge Sort is a divide and conquer algorithm that works by breaking an array down into several smaller sub-arrays until each sub array consists of a single element, and then merges them back into a final sorted array. It is important to note that although my example shows an array being sorted, you will often see Merge Sort being the preferred implementation when dealing with sorting linked-lists. The time complexity of the Merge Sort algorithm is <b>O(n log n)</b>, and space complexity is <b>O(n)</b>.
    
 ```cs
 private static int[] MergeSort(int[] nums)
@@ -704,7 +704,7 @@ public static int[] Merge(int[] left, int[] right)
   
  <details>
    <summary><b>Quick Sort</b></summary>
-   Quick Sort is another divide and conquer algorithm. It works by choosing an element as a pivot point, and then partitioning the array around that pivot point so that elements that are smaller than the pivot point are before it, and elements larger than it are after it. Through recursion, we repeat this partition until the array is sorted. Although you could select any element as the pivot point, it is common to choose the median value from the first, last, and middle element of the array. A benefit of Quick Sort is that it sorts in place so it doesn’t require any additional storage. The worst case time complexity of Quick Sort is <b>O(n<sup>2</sup></b>), but the average time complexity (and best) is <b>O(n log n)</b>; however, the space complexity is only <b>O(n)</b>.
+   Quick Sort is another divide and conquer algorithm. You will often see Quick Sort being the preferred implementation when dealing with sorting arrays. It works by choosing an element as a pivot point, and then partitioning the array around that pivot point so that elements that are smaller than the pivot point are before it, and elements larger than it are after it. Through recursion, we repeat this partition until the array is sorted. Although you could select any element as the pivot point, it is common to choose the median value from the first, last, and middle element of the array. A benefit of Quick Sort is that it sorts in place so it doesn’t require any additional storage. The worst case time complexity of Quick Sort is <b>O(n<sup>2</sup></b>), but the average time complexity (and best) is <b>O(n log n)</b>; however, the space complexity is only <b>O(log n)</b>.
    
    ```cs
 public static void QuickSort(int[] arr, int low, int high)
