@@ -572,7 +572,7 @@ An example of using a Linked List is:
 ## Common Searching/Sorting Algorithms
  <details>
    <summary><b>Binary Search</b></summary>
-   Binary Search is a fast algorithm to find a value in a sorted array (or any sorted sequence). The algorithm works by initially searching the entire sequence. At each step, the algorithm compares the median value in the search space to the target value. Due to the sequence being sorted, it can then eliminate half of the search space. By doing this repeatedly, it will eventually be left with a search space consisting of a single element, the target value/index, or we can return out of the function if the target does not exist at this point. The time complexity of the Binary Search algorithm is <b>O(log n)</b>.
+   Binary Search is a fast algorithm to find a value in a sorted array (or any sorted sequence). The algorithm works by initially searching the entire sequence. At each step, the algorithm compares the median value in the search space to the target value. Due to the sequence being sorted, it can then eliminate half of the search space. By doing this repeatedly, it will eventually be left with a search space consisting of a single element, the target value/index, or we can return out of the function if the target does not exist at this point. The time complexity of the Binary Search algorithm is <b>O(log n)</b>, and space complexity is <b>O(n)</b>.
 
 ```cs
 // Binary Search in a sorted array
