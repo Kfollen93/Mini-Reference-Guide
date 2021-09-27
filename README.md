@@ -8,7 +8,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * Big O Notation :o:
 * Generic Collections :wrench:
 * Object Oriented Programming          --> <i>In progress</i> :hammer:
-* Common Sorting Algorithms            --> <i>In progress</i> :hammer:
+* Common Sorting Algorithms
 * Binary Trees and Binary Search Trees :evergreen_tree:
 
 ## Big O Notation
