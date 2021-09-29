@@ -558,7 +558,7 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Abstraction</b></summary>
-   Abstraction only shows the essential information, and hides any unnecessary details from the user.
+   Abstraction only shows the essential information, and hides any unnecessary details from the user. Abstraction is often implemented through interfaces and by using abstract classes.
  </details>
   
  <details>
