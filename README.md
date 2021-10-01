@@ -640,6 +640,7 @@ class Program
         }
     }
 ```
+   You can then create as many other car classes that you want like <code>Audi</code> for example, and then have it also inherit from the <code>Car</code> base class. This way you are able to reuse the fields created, and tailor them specifically to the car you create, without having to re-write the same code each time.
 
  </details>
   
