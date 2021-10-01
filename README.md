@@ -563,7 +563,83 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Inheritance</b></summary>
-   At the simples level, Inheritance involves the child class inheriting data and behaviors from the parent class. Sticking with the car example, it would make sense to have a parent class named <code>Car</code>. This class would contain data that is shared among all cars such as: <code>type</code>, <code>model</code>, <code>year</code>, <code>color</code>, and so forth. The idea of this parent class is that it contains general data that our child classes can inherit when we create an object. For example, now that the parent class <code>Car</code> is complete, we could make a child class such as <code>BMW</code> that inherits from <code>Car</code> and create an object. This might look like:
+   At the simplest level, Inheritance involves the child class inheriting data and behaviors from the parent class. Sticking with the car example, it would make sense to have a parent class named <code>Car</code>. This class would contain data that is shared among all cars such as: <code>type</code>, <code>model</code>, <code>year</code>, <code>color</code>, and so forth. The idea of this parent class is that it contains general data that our child classes can inherit when we create an object. For example, now that the parent class <code>Car</code> is complete, we could make a child class such as <code>BMW</code> that inherits from <code>Car</code> and create an object. This might look like:
+   
+   ```cs
+    class Car
+    {
+        private string type;
+        public string Type
+        {
+            get { return type; }
+            set { type = value; }
+        }
+
+        private int numOfDoors;
+        public int NumOfDoors
+        {
+            get { return numOfDoors; }
+            set { numOfDoors = value; }
+        }
+
+        private int year;
+        public int Year
+        {
+            get { return year; }
+            set { year = value; }
+        }
+
+        private string color;
+        public string Color
+        {
+            get { return color; }
+            set { color = value; }
+        }
+
+        public void PushHorn()
+        {
+            Console.WriteLine("Honk honk!");
+        }
+    }
+```
+
+```cs
+    class Bmw : Car
+    {
+        public string bmwSeries = "Default Series";
+
+        public void DisplayBMWLogo()
+        {
+            Console.WriteLine("Only BMW cars come with the BMW logo.");
+        }
+    }
+```
+
+```cs
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Bmw myBmw = new Bmw();
+            {
+                myBmw.Type = "gas";
+                myBmw.NumOfDoors = 2;
+                myBmw.Year = 2004;
+                myBmw.Color = "red";
+                myBmw.bmwSeries = "series 3";
+            };
+
+            myBmw.PushHorn();
+            Console.WriteLine($"My BMW is a {myBmw.NumOfDoors} door car, and it is a {myBmw.bmwSeries}.");
+            myBmw.DisplayBMWLogo();
+   
+            /* Output:
+               Honk honk!
+               My BMW is a 2 door car, and it is a series 3.
+               Only BMW cars come with the BMW logo. */
+        }
+    }
+```
 
  </details>
   
