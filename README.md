@@ -646,6 +646,7 @@ class Program
   
  <details>
    <summary><b>Polymorphism</b></summary>
+   To understand Polymorphism, it helps to know what the actual definition of the term is. Polymorphism is the condition of occurring in several different forms. In programming, this means that Polymorphism provides a class with the ability to have multiple implementations with the same name.
  </details>
   
 ## Common Searching/Sorting Algorithms
