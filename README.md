@@ -558,7 +558,9 @@ An example of using a Linked List is:
   
  <details>
    <summary><b>Abstraction</b></summary>
-   Abstraction only shows the essential information, and hides any unnecessary details from the user. Abstraction is often implemented through interfaces and by using abstract classes.
+   Abstraction only shows the essential information, and hides any unnecessary details from the user. Abstraction is often implemented through interfaces and by using abstract classes. Abstraction and Encapsulation relate in a lot of ways, but Abstraction's focus is around creating an interface through which classes can interact with, and keeping the code decoupled so that each object is its own entity.<br>
+   <br>
+We're abstracting away the actual implmentation of how something works.  We're not interested in those specifics. A great example can be seen with a car. There are few things we need to know about a car in order to use it: how much gas it has, how the steering wheel works, where the break pedal and gas pedal is, and so forth. However, we don't need to know exactly how the car works when we press the gas pedal and how this actually causes the car to move, along with how the break pedal works to slow down the car. All we care about is that if we call the method <code>MoveCar()</code> that the car would move. Therefore, by using interfaces, sections of code can communicate with each other, but they don't depend on each other to work.
  </details>
   
  <details>
