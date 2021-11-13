@@ -947,7 +947,7 @@ namespace CodingProblem
   
  <details>
    <summary><b>Merge Sort</b></summary>
-   Merge Sort is a divide and conquer algorithm that works by breaking an array down into several smaller sub-arrays until each sub array consists of a single element, and then merges them back into a final sorted array. It is important to note that although my example shows an array being sorted, you will often see Merge Sort being the preferred implementation when dealing with sorting linked-lists. The time complexity of the Merge Sort algorithm is <b>O(n log n)</b>, and space complexity is <b>O(n)</b>.
+   Merge Sort is a divide and conquer algorithm that works by breaking an array down into several smaller sub-arrays until each sub-array consists of a single element, and then merges them back into a final sorted array. It is important to note that although my example shows an array being sorted, you will often see Merge Sort being the preferred implementation when dealing with sorting linked-lists. The time complexity of the Merge Sort algorithm is <b>O(n log n)</b>, and space complexity is <b>O(n)</b>.
    
 ```cs
 private static int[] MergeSort(int[] nums)
