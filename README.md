@@ -1528,5 +1528,12 @@ public class Solution
     }
 }
 ```
-  </details>
+</details>
+</details>
+      </details>
+ 
+## Miscellaneous
+<details>
+  <summary><b>Dependency Injection</b></summary>
+<br>
 </details>
