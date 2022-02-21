@@ -1537,3 +1537,10 @@ public class Solution
   <summary><b>Dependency Injection</b></summary>
 <br>
 </details>
+
+<details>
+  <summary><b>Delegates</b></summary>
+<br>
+</details>
+
+
