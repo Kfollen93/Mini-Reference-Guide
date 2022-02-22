@@ -1540,6 +1540,7 @@ public class Solution
 
 <details>
   <summary><b>Delegates</b></summary>
+  To quote Microsoft: "A delegate is a type that represents references to methods with a particular parameter list and return type".
 <br>
 </details>
 
