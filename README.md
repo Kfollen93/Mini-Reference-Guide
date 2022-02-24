@@ -1540,7 +1540,7 @@ public class Solution
 
 <details>
   <summary><b>Delegates</b></summary>
-  To quote Microsoft: "A delegate is a type that represents references to methods with a particular parameter list and return type". Delegates allow methods to be passed as parameters. You can understand how to implement/use a delegate by following the three steps: Declaration, Instantiation, and Invocation.
+  To quote Microsoft: "A delegate is a type that represents references to methods with a particular parameter list and return type". Delegates allow methods to be passed as parameters. You can understand how to implement/use a delegate by following the three steps: Declaring, Instaniating, and Invoking.
 <br>
 </details>
 
