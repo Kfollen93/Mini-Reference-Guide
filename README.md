@@ -1535,6 +1535,7 @@ public class Solution
 ## Miscellaneous
 <details>
   <summary><b>Dependency Injection</b></summary>
+  Dependency Injection deals with providing the objects that an object needs, instead of having it construct the objects themselves.
 <br>
 </details>
 
