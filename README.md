@@ -1535,7 +1535,7 @@ public class Solution
 ## Miscellaneous
 <details>
   <summary><b>Dependency Injection</b></summary>
-  Dependency Injection deals with providing the objects that an object needs, instead of having it construct the objects themselves.
+  Dependency Injection deals with providing the objects that an object needs, instead of having it construct the objects themselves. It is a software design pattern which enables the development of loosely coupled code. 
 <br>
 </details>
 
