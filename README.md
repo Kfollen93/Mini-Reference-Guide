@@ -1536,6 +1536,7 @@ public class Solution
 <details>
   <summary><b>Dependency Injection</b></summary>
   Dependency Injection deals with providing the objects that an object needs, instead of having it construct the objects themselves. It is a software design pattern which enables the development of loosely coupled code. This results in being able to more easily make future changes throughout the application. The last of the <a href="https://simple.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a> principles (the "D") stands for "Dependency Inversion Principle" which states: "that high-level modules/classes should not depend on low-level modules/classes. Both should depend upon abstractions. Secondly, abstractions should not depend upon details. Details should depend upon abstractions". <br>
+<br>
 An example of when dependency injection would come in use could look like:
 
 <br>
