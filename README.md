@@ -1539,7 +1539,7 @@ public class Solution
 <br>
 Within Dependency Injection, there are three types: "Constructor Injection, Property Injection, and Method Injection". <br>
 <br>
-Constructor Injection is what you are most likely to see being used.
+Constructor Injection is what you are most likely to see being used. In this case, the dependency will be provided through the constructor when an instance of the class is created.
 
 <br>
 </details>
