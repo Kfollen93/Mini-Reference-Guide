@@ -40,7 +40,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
   An example of O(log n) is:
 
   ```cs
-  // Binary Search in a sorted array
+  // Binary Search
   private static int SearchForTargetIndex(int[] arr, int target)
   {
       int leftPointer = 0;
