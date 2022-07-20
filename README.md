@@ -1554,7 +1554,7 @@ Property Injection works by passing the dependent class object through a public 
 
 <details>
   <summary><b>Constructors</b></summary>
-  To quote Microsoft: "Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read."
+  To quote Microsoft: "Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read." A constructor is called whenever its class (or struct) is created.
 <br>
 </details>
 
