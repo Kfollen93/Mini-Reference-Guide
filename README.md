@@ -1547,7 +1547,7 @@ Property Injection works by passing the dependent class object through a public 
 </details>
 
 <details>
-  <summary><b>Delegates</b></summary>
+  <summary><b>Delegates and Events</b></summary>
   To quote Microsoft: "A delegate is a type that represents references to methods with a particular parameter list and return type". Delegates allow methods to be passed as arguments. You can understand how to implement/use a delegate by following the three steps: Declaring, Instaniating, and Invoking.
 <br>
 </details>
