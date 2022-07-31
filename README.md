@@ -920,20 +920,14 @@ namespace CodingProblem
     
       while (leftPointer <= rightPointer)
       {
-          int mid = (leftPointer + rightPointer) / 2;
+          int mid = leftPointer + (rightPointer - leftPointer) / 2;
 
           if (arr[mid] == target)
-          {
               return mid;
-          }
           else if (target < arr[mid])
-          {
               rightPointer = mid - 1;
-          }
           else
-          {
               leftPointer = mid + 1;
-          }
       }
       return false; // Target does not exist.
   }
