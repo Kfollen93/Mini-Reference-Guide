@@ -535,6 +535,9 @@ An example of using a Linked List is:
         get { return name; } // get accessor which returns the value of the Name property
         set { name = value; } // set accessor to set a new value. The value keyword represents the value being assigned to the property.
     }
+    
+    // This could also be simplified to:
+    public string Name { get; set; }
 }
 ```
 ```cs
