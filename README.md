@@ -433,7 +433,7 @@ public class Solution
   
 <details>
   <summary><b>HashSet</b></summary>
-  Functions similar to a List by being able to add and remove items, however the main difference is that it can only store unordered unique elements (no duplicates). You can also use similar properties and functions with a HashSet that you can with a List such as Count(), Add(), and Remove(). <br>
+  Functions similar to a List by being able to add and remove items, however the main difference is that it can only store unordered unique elements (no duplicates). In addition to the above, a HashSet set has a O(1) lookup time, compared to a List or Array, which is O(n). A HashSet has similar functions to a List such as Count(), Add(), and Remove(). <br>
   <br>
 An example of using a HashSet is:
   
