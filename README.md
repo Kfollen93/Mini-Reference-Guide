@@ -295,7 +295,7 @@ public static int[] Merge(int[] left, int[] right)
 
 <details>
   <summary><b>List</b></summary>
-  Similar to an Array but able to add/remove items from it during run time. <br>
+  Similar to an Array but able to add/remove items from it during run time. Array memory is static and continuous. List memory is dynamic and random. <br>
   <br>
   An example of using a List is:
   
