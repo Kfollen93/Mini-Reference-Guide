@@ -352,7 +352,7 @@ public static int[] Merge(int[] left, int[] right)
   
 <details>
   <summary><b>Queue</b></summary>
-  Stores items on First-in-First-out (FIFO) basis. You can remember how a Queue works by thinking of waiting in a line. The person at the front of the line, will be first the first person out of the line. <br>
+  Stores items on First-in-First-out (FIFO) basis. You can remember how a Queue works by thinking of waiting in a line. The person at the front of the line, will be first the first person out of the line. Queues are often seen used in Breadth First Search (BFS) algorithms.<br>
   <br>
   An example of a using a Queue is:
   
