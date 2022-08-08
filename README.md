@@ -81,6 +81,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
       }
   }
   ```
+ It is worth noting in the example above, if the array was sorted already, we could apply Binary Search to solve this and reduce the time complexity down to O(log n), but assuming the array is not sorted, then this would be the most optimal solution, as sorting an array is slower than a linear search (as you will see in the next example).
 </details>
   
 <details>
