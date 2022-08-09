@@ -389,7 +389,7 @@ public static int[] Merge(int[] left, int[] right)
   
 <details>
   <summary><b>Stack</b></summary>
-  Stores items on a Last-in-First-out (LIFO) basis. Some important methods of a Stack are: Peek() which returns the object at the top of the Stack without removing it, Pop() which removes and returns the object at the top of the Stack, and Push() which inserts an object at the top of the Stack. A Stack is often used for Depth First Search (DFS) solutions. <br>
+  Stores items on a Last-in-First-out (LIFO) basis. Some important methods of a Stack are: Peek() which returns the object at the top of the Stack without removing it, Pop() which removes and returns the object at the top of the Stack, and Push() which inserts an object at the top of the Stack. A Stack is often used for Depth First Search (DFS) solutions and/or can be implemented as an iterative solution, as an alternative to a recursive solution.<br>
   <br>
   I find myself frequently using Stacks when implementing an iterative approach during a tree traversal, an example being:
   
