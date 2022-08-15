@@ -1557,7 +1557,9 @@ Property Injection works by passing the dependent class object through a public 
 
 <details>
   <summary><b>Value Types & Reference Types</b></summary>
-  Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, sbyte, short, struct, uint, ulong, and ushort. Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, and dynamic.
+  Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, sbyte, short, struct, uint, ulong, and ushort.
+  <br>
+  Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, and dynamic.
 </details>
 
 
