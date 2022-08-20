@@ -1561,34 +1561,34 @@ Property Injection works by passing the dependent class object through a public 
   <br>
   Common Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, struct, and short.
   <br>
-  Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object.
+  Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
   <br>
   
   A concise example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field:
-  ```
-        public class MyClass
-        {
-            public int value;
-            public MyClass(int value) => this.value = value;
-        }
+  ```cs
+    public class MyClass
+    {
+        public int value;
+        public MyClass(int value) => this.value = value;
+    }
 
-        public struct MyStruct
-        {
-            public int value;
-            public MyStruct(int value) => this.value = value;
-        }
-        
-        MyClass myClassOne = new MyClass(7);
-        MyClass myClassTwo = myClassOne;
-        myClassTwo.value = 5;
-        Console.WriteLine("ClassOne has a value of: " + myClassOne.value);
-        // ClassOne has a value of: 5
+    public struct MyStruct
+    {
+        public int value;
+        public MyStruct(int value) => this.value = value;
+    }
 
-        MyStruct myStructOne = new MyStruct(7);
-        MyStruct myStructTwo = myStructOne;
-        myStructTwo.value = 5;
-        Console.WriteLine("StructOne has a value of: " + myStructOne.value);
-        // StructOne has a value of: 7
+    MyClass myClassOne = new MyClass(7);
+    MyClass myClassTwo = myClassOne;
+    myClassTwo.value = 5;
+    Console.WriteLine("ClassOne has a value of: " + myClassOne.value);
+    // ClassOne has a value of: 5
+
+    MyStruct myStructOne = new MyStruct(7);
+    MyStruct myStructTwo = myStructOne;
+    myStructTwo.value = 5;
+    Console.WriteLine("StructOne has a value of: " + myStructOne.value);
+    // StructOne has a value of: 7
 ```
   
 </details>
