@@ -1570,13 +1570,13 @@ Method Injection works by having the client class implement an interface which d
     public class MyClass
     {
         public int value;
-        public MyClass(int value) => this.value = value;
+        public MyClass(int num) => value = num;
     }
 
     public struct MyStruct
     {
         public int value;
-        public MyStruct(int value) => this.value = value;
+        public MyStruct(int num) => value = num;
     }
 
     MyClass myClassOne = new MyClass(7);
