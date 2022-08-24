@@ -1542,7 +1542,35 @@ Constructor Injection is what you are most likely to see being used. In this cas
 Property Injection works by passing the dependent class object through a public property of the client class. It is not likely that you will see this often. <br>
 <br>
 Method Injection works by having the client class implement an interface which declares the method(s) to supply the dependency and the injector uses this interface to supply the dependency to the client class.
+<br>
 
+Within .NET Core, Dependency Injection (Inversion of Control) can be set up through services. <br>
+It is common to do this with the Database Context file such as:
+```cs
+  // Program.cs File:
+  builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
+```
+<br>
+
+// The file you want to use implemeting with Constructor Injection:
+```cs
+  namespace TestAPI.Controllers
+  {
+      [Route("api/[controller]")]
+      [ApiController]
+      public class IssueController : ControllerBase
+      {
+          private readonly ApiDbContext _context;
+          public IssueController(ApiDbContext context) => _context = context;
+
+          [HttpGet]
+          public async Task<IEnumerable<Issue>> Get()
+          {
+              return await _context.Issues.ToListAsync();
+          }
+       }
+  }
+```
 <br>
 </details>
 
