@@ -1549,11 +1549,8 @@ It is common to do this with the Database Context file such as:
 ```cs
   // Program.cs File:
   builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
-```
-<br>
 
-// The file you want to use implemeting with Constructor Injection:
-```cs
+  // The file you want to use implemeting with Constructor Injection:
   namespace TestAPI.Controllers
   {
       [Route("api/[controller]")]
