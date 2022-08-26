@@ -1550,7 +1550,7 @@ It is common to do this with the Database Context file such as:
   // Program.cs File:
   builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
 
-  // The file you want to use implemeting with Constructor Injection:
+  // The file you want to use implementing with Constructor Injection:
   namespace TestAPI.Controllers
   {
       [Route("api/[controller]")]
