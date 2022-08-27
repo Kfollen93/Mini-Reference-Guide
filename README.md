@@ -1579,7 +1579,7 @@ It is common to do this with the Database Context file such as:
 
 <details>
   <summary><b>Constructors</b></summary>
-  To quote Microsoft: "Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read." A constructor is called whenever its class (or struct) is created. You will often utilize a constructor to initialize the private fields of the class while creating an instance for the class.
+  To quote Microsoft: "Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read." A constructor is called whenever its class (or struct) is created. You will often utilize a constructor to initialize the private fields of the class while creating an instance for the class. It also common to limit instantiation with a constructor, in terms of providing a means of specifying the required data when the object is created
 <br>
 </details>
 
