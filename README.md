@@ -10,7 +10,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * Object Oriented Programming :classical_building:
 * Common Sorting Algorithms :balance_scale:
 * Binary Trees and Binary Search Trees :evergreen_tree:
-* Miscellaneous
+* Miscellaneous *(WIP)*
 
 ## Big O Notation
 <details>
