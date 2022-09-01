@@ -1604,7 +1604,7 @@ class Employee
   <summary><b>Value Types & Reference Types</b></summary>
   Value Types directly contain their data, where Reference Types store references to their data. <br>
   <br>
-  Common Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, struct, and short.
+  Common Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, struct, and short. <br>
   <br>
   Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
   <br>
