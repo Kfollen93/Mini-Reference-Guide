@@ -1541,7 +1541,7 @@ Constructor Injection is what you are most likely to see being used. In this cas
 <br>
 Property Injection works by passing the dependent class object through a public property of the client class. It is not likely that you will see this often. <br>
 <br>
-Method Injection works by having the client class implement an interface which declares the method(s) to supply the dependency and the injector uses this interface to supply the dependency to the client class.
+Method Injection works by having the client class implement an interface which declares the method(s) to supply the dependency and the injector uses this interface to supply the dependency to the client class. <br>
 <br>
 
 Within .NET Core, Dependency Injection (Inversion of Control) can be set up through services. <br>
