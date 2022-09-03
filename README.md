@@ -41,7 +41,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 
   ```cs
   // Binary Search
-  private static int SearchForTargetIndex(int[] arr, int target)
+  private int SearchForTargetIndex(int[] arr, int target)
   {
       int leftPointer = 0;
       int rightPointer = arr.Length - 1;
