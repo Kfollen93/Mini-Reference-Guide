@@ -1573,8 +1573,29 @@ It is common to do this with the Database Context file such as:
 
 <details>
   <summary><b>Delegates and Events</b></summary>
-  To quote Microsoft: "A delegate is a type that represents references to methods with a particular parameter list and return type". Delegates allow methods to be passed as arguments. You can understand how to implement/use a delegate by following the three steps: Declaring, Instaniating, and Invoking.
+  To quote Microsoft: "A delegate is a type that represents references to methods with a particular parameter list and return type". Delegates allow methods to be passed as arguments. You can understand how to implement/use a delegate by following the three steps: Declaring, Instaniating, and Invoking. <br>
 <br>
+
+Continue to use examples from Microsoft, declaring a delegate looks like this:
+```cs
+public delegate void Del(string message);
+```
+We then need a method for the delegate to use, this example matches the type our `Del` expects: <br>
+```cs
+// Create a method for a delegate.
+public static void DelegateMethod(string message)
+{
+    Console.WriteLine(message);
+}
+```
+Finally we can:
+```cs
+// Instantiate the delegate.
+Del handler = DelegateMethod;
+
+// Call the delegate.
+handler("Hello World");
+```
 </details>
 
 <details>
