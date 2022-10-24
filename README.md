@@ -1631,7 +1631,7 @@ class Employee
   Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
   <br>
   
-  A concise example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field:
+  An example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field:
   ```cs
     public class MyClass
     {
