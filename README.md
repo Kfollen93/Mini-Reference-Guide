@@ -248,7 +248,7 @@ public static int[] Merge(int[] left, int[] right)
 ## Generic Collections
 <details>
   <summary><b>Dictionary</b></summary>
-  Stores items as a Key/Value pair. I find using a Dictionary can be useful for when you need to add keys (keys must be unique), and be able to track the value for each key. Since the elements are stored as KeyValuePair objects, you can easily loop through the Dictionary to find the value of a key. The Dictionary structure utilizes hashing, allowing for many methods (Add(), ContainsKey(), etc) to run in O(1) time.<br>
+  Stores items as a Key/Value pair. I find using a Dictionary can be useful for when you need to add keys (keys must be unique), and be able to track the value for each key. Since the elements are stored as KeyValuePair objects, you can easily loop through the Dictionary to find the value of a key. The Dictionary structure utilizes hashing, allowing for many methods (Add(), ContainsKey(), etc) to run in O(1) time (similiar to a HashSet).<br>
  <br>
  An example of using a Dictionary is:
   
