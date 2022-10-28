@@ -516,6 +516,8 @@ An example of using a Linked List is:
               prev = temp;
           } 
           return prev;
+          
+          // This could also be implemented with a Stack :) 
       }
   }
 ```
