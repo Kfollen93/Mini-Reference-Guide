@@ -1358,7 +1358,7 @@ public class Solution
   <summary><b>Traversing a Tree</b></summary>
     <details>
       <summary><b>Breadth First Search (Level-order Traversal)</b></summary>
-      Breadth First Search (BFS), also known as Level-order Traversal, is when you a traverse a tree starting from the root node and then explore all the nodes at the current depth, before moving on to explore all the nodes at the next depth. I like to think of this as going from left to right as you explore the nodes at each level of the tree. <br>
+      Breadth First Search (BFS), also known as Level-order Traversal, is when you traverse a tree starting from the root node and then explore all the nodes at the current depth, before moving on to explore all the nodes at the next depth. I like to think of this as going from left to right as you explore the nodes at each level of the tree. <br>
       <br>
       An example to return the level order traversal of a tree nodes' values. (i.e., from left to right, level by level) is: <br>
       
