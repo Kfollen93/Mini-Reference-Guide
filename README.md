@@ -1579,7 +1579,7 @@ It is common to do this with the Database Context file such as:
   To quote Microsoft: "A delegate is a type that represents references to methods with a particular parameter list and return type". Delegates allow methods to be passed as arguments. You can understand how to implement/use a delegate by following the three steps: Declaring, Instaniating, and Invoking. <br>
 <br>
 
-Continue to use examples from Microsoft, declaring a delegate looks like this:
+Continuing to use examples from Microsoft, declaring a delegate looks like this:
 ```cs
 public delegate void Del(string message);
 ```
