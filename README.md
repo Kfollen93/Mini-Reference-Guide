@@ -655,7 +655,7 @@ class Program
   
  <details>
    <summary><b>Polymorphism</b></summary>
-   To understand Polymorphism, it helps to know what the actual definition of the term is. Polymorphism is the condition of occurring in several different forms. In programming, this means that Polymorphism provides a class with the ability to have multiple implementations with the same name. Polymorphism tends to expand on Inheritance by allowing us to use inherited methods from another class to perform different tasks. This gives us the opportunity to call a single method in many different ways (specifically by including the use of virtual and override methods). <br>
+   Polymorphism is the condition of occurring in several different forms. In programming, this means that Polymorphism provides a class with the ability to have multiple implementations with the same name. Polymorphism tends to expand on Inheritance by allowing us to use inherited methods from another class to perform different tasks. This gives us the opportunity to call a single method in many different ways (specifically by including the use of virtual and override methods). <br>
 To make this more clear, I have posted an example below directly from the Microsoft documentation on Polymorphism:
 
 ```cs
