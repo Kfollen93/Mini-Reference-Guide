@@ -1640,7 +1640,10 @@ class Employee
         public int value;
         public MyClass(int num) => value = num;
     }
-
+    
+    // If a struct declares any field initializers, it must explicitly declare a constructor (otherwise there will be a compiler error).
+    // Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct.
+    // All fields without a field initializer or an assignment in a constructor are set to the default value.
     public struct MyStruct
     {
         public int value;
