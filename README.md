@@ -57,7 +57,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
           else
               leftPointer = mid + 1;
       }
-      return false; // Target does not exist.
+      return false;
   }
   ```
   It is worth noting that in the best case here, the time complexity could actually be O(1) if the mid point matches the target at the start. However, it is typical to measure time complexity based upon the worst case scenario, which in this case would be O(log n).
