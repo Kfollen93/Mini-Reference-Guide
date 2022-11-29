@@ -1610,18 +1610,19 @@ As an example, you may want to specify a required first name and last name when 
 ```cs
 class Employee
 {
+  public string FirstName { get; set; }
+  public string LastName { get; set; }
+  public string Salary { get; set; }
+  
   // Employee constructor                                                   
   public Employee(string firstName, string lastName)                        
   {                                                                         
     FirstName = firstName;                                                  
     LastName = lastName;                                                    
   }                                                                         
- 
-  public string FirstName { get; set; }
-  public string LastName { get; set; }
-  public string Salary { get; set; }
 }
 ```
+By doing the above, now an Employee object can only be instantiated by defining the `FirstName` and `LastName`. 
 </details>
 
 <details>
