@@ -1622,7 +1622,11 @@ class Employee
   }                                                                         
 }
 ```
-By doing the above, now an Employee object can only be instantiated by defining the `FirstName` and `LastName`. 
+By doing the above, now an Employee object can only be instantiated by defining the `FirstName` and `LastName`. You would get an error if you tried doing:
+```cs
+var employee = new Employee(); // Error.
+var employee = new Employee("Bob", "Smith"); // Works.
+```
 </details>
 
 <details>
