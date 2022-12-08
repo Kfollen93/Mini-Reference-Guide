@@ -1548,6 +1548,7 @@ Method Injection works by having the client class implement an interface which d
 <br>
 
 Within .NET Core, Dependency Injection (Inversion of Control) can be set up through a built-in service container (*Note: While DI is integrated by default in .NET Core applications, it is not for older .NET Framework applications. For older applications you will need a nuget package, for example, StructureMap*). <br>
+<br>
 It is common to do this with the Database Context file such as:
 ```cs
   // Program.cs File:
