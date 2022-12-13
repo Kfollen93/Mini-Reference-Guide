@@ -1600,6 +1600,7 @@ Del handler = DelegateMethod;
 // Call the delegate.
 handler("Hello World");
 ```
+<b> Events </b>
 </details>
 
 <details>
