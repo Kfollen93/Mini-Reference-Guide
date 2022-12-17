@@ -1640,6 +1640,8 @@ var employee = new Employee("Bob", "Smith"); // Works.
   Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
   <br>
   
+  It's worth noting that Value Types all have a default value based on their type (ex: 1 for Integer, false for boolean, etc.), contrary to all reference types having a default value of null.
+  
   An example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field:
   ```cs
     public class MyClass
