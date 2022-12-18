@@ -1629,6 +1629,8 @@ By doing the above, now an Employee object can only be instantiated by defining 
 var employee = new Employee(); // Error.
 var employee = new Employee("Bob", "Smith"); // Works.
 ```
+<br>
+There may be times where you want to create an object without any specifications, but also have the option to specify. In this case, you would need to define an empty constructor, along with a second constructor holding the fields you require. You are not restricted to only one constructor.
 </details>
 
 <details>
