@@ -1584,15 +1584,15 @@ It is common to do this with the Database Context file such as:
   <summary><b>Classes, Records, Structs</b></summary>
     <details>
       <summary><b>Class</b></summary>
-        Layout set up (temp).
+        Classes are references types.
     </details>
     <details>
       <summary><b>Record</b></summary>
-        Layout set up (temp).
+        Records are defaulted to immutable reference types.
     </details>
     <details>
       <summary><b>Struct</b></summary>
-        Layout set up (temp).
+        Structs are value types. A performance rule of thumb is that structs should be less than 16 bytes, which makes them typically fairly small. Since structs are passed by value, the size of the struct would be copied if it is passed to a function (compared to only a reference pointer (4 bytes) being passed). Therefore, if all the member fields are value types and it's less than 16 bytes, you should probably opt for using a struct.
     </details>
 </details>
 
