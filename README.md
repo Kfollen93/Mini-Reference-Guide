@@ -1582,7 +1582,18 @@ It is common to do this with the Database Context file such as:
 
 <details>
   <summary><b>Classes, Records, Structs</b></summary>
-
+    <details>
+      <summary><b>Class</b></summary>
+        Layout set up (temp).
+    </details>
+    <details>
+      <summary><b>Record</b></summary>
+        Layout set up (temp).
+    </details>
+    <details>
+      <summary><b>Struct</b></summary>
+        Layout set up (temp).
+    </details>
 </details>
 
 <details>
