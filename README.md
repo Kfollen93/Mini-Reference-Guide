@@ -1588,7 +1588,7 @@ It is common to do this with the Database Context file such as:
     </details>
     <details>
       <summary><b>Record</b></summary>
-        Records are defaulted to immutable reference types.
+        Records are defaulted to immutable reference types. I've viewed records as simple sets of data. Where a class holds data with functionality, a record is just a data container. Records also use value-based equality, making them actually more similar to structs than classes in that sense.
     </details>
     <details>
       <summary><b>Struct</b></summary>
