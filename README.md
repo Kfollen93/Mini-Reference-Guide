@@ -1581,7 +1581,7 @@ It is common to do this with the Database Context file such as:
 </details>
 
 <details>
-  <summary><b>Classes, Records, Structs</b></summary>
+  <summary><b>Should I use a Class, Record, or Struct?</b></summary>
     <details>
       <summary><b>Class</b></summary>
         Classes are references types.
