@@ -1584,7 +1584,7 @@ It is common to do this with the Database Context file such as:
   <summary><b>Should I use a Class, Record, or Struct?</b></summary>
     <details>
       <summary><b>Class</b></summary>
-        Classes are references types.
+        Classes are references types that are mutable by default (however it's possible to make an immutable class). Where a record can be viewed as simply a data structure, a class can hold data and behavior (defined by its methods).
     </details>
     <details>
       <summary><b>Record</b></summary>
@@ -1592,7 +1592,7 @@ It is common to do this with the Database Context file such as:
     </details>
     <details>
       <summary><b>Struct</b></summary>
-        Structs are value types. A performance rule of thumb is that structs should be less than 16 bytes, which makes them typically fairly small. Since structs are passed by value, the size of the struct would be copied if it is passed to a function (compared to only a reference pointer (4 bytes) being passed). Therefore, if all the member fields are value types and it's less than 16 bytes, you should probably opt for using a struct. Two struct objects can also be checked for equality by value ussing ValueType.Equals(), doing this would not work for a class (as the default implementation of Object.Equals() checks for reference equality, and not the values within).
+        Structs are value types. A performance rule of thumb is that structs should be less than 16 bytes, which makes them typically fairly small. Since structs are passed by value, the size of the struct would be copied if it is passed to a function (compared to only a reference pointer (4 bytes) being passed). Therefore, if all the member fields are value types and it's less than 16 bytes, you should probably opt for using a struct. Two struct objects can also be checked for equality by value using ValueType.Equals(), doing this would not work for a class (as the default implementation of Object.Equals() checks for reference equality, and not the values within).
     </details>
 </details>
 
