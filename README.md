@@ -1577,7 +1577,18 @@ It is common to do this with the Database Context file such as:
 
 <details>
   <summary><b>Delegates, Actions, Events</b></summary>
-
+    <details>
+      <summary><b>Delegate</b></summary>
+        Temp
+    </details>
+        <details>
+      <summary><b>Action</b></summary>
+        Temp
+    </details>
+        <details>
+      <summary><b>Event</b></summary>
+        Temp
+    </details>
 </details>
 
 <details>
