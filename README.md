@@ -297,7 +297,7 @@ public static int[] Merge(int[] left, int[] right)
 
 <details>
   <summary><b>List</b></summary>
-  Similar to an Array but able to add/remove items from it during run time. Array memory is static and continuous. List memory is dynamic and random. List has a .Count property and if .Count equals .Capacity, then the capacity of the List is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added. However, if .Count is less than .Capacity, this calling .Add() is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(n) operation, where n is Count. <br>
+  Similar to an Array but able to add/remove items from it during run time. Array memory is static and continuous. List memory is dynamic and random. List has a .Count property and if .Count equals .Capacity, then the capacity of the List is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added. However, if .Count is less than .Capacity, this calling .Add() is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(n) operation, where n is Count. Remove() is a linear search. <br>
   <br>
   An example of using a List is:
   
