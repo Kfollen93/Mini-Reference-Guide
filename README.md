@@ -354,7 +354,7 @@ public static int[] Merge(int[] left, int[] right)
   
 <details>
   <summary><b>Queue</b></summary>
-  Stores items on First-in-First-out (FIFO) basis. You can remember how a Queue works by thinking of waiting in a line. The person at the front of the line, will be first the first person out of the line. Enqueue() is an O(1) operation if the Count is less than the capacity of the internal array (then it is linear). Where as Dequeue() and Peek() are always an O(1) operation. Queues are often seen used in Breadth First Search (BFS) algorithms.<br>
+  Stores items on First-in-First-out (FIFO) basis. You can remember how a Queue works by thinking of waiting in a line. The person at the front of the line, will be first the first person out of the line. Enqueue() is an O(1) operation if the Count is less than the capacity of the internal array (otherwise it is linear). Where as Dequeue() and Peek() are always an O(1) operation. Queues are often seen used in Breadth First Search (BFS) algorithms.<br>
   <br>
   An example of a using a Queue is:
   
