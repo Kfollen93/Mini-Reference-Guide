@@ -577,33 +577,10 @@ We're abstracting away the actual implmentation of how something works.  We're n
    ```cs
     class Car
     {
-        private string type;
-        public string Type
-        {
-            get { return type; }
-            set { type = value; }
-        }
-
-        private int numOfDoors;
-        public int NumOfDoors
-        {
-            get { return numOfDoors; }
-            set { numOfDoors = value; }
-        }
-
-        private int year;
-        public int Year
-        {
-            get { return year; }
-            set { year = value; }
-        }
-
-        private string color;
-        public string Color
-        {
-            get { return color; }
-            set { color = value; }
-        }
+        public string Type { get; set; }
+        public int NumOfDoors { get; set; }
+        public int Year { get; set; }
+        public string Color { get; set; }
 
         public void PushHorn()
         {
