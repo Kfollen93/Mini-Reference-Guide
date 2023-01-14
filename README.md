@@ -14,9 +14,10 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 
 ## Big O Notation
 <details>
-  <summary><b>Big O Complexity Chart</b></summary>
+  <summary><b>Big-O Complexity Chart</b></summary>
 <br>
 <img src=https://github.com/Kfollen93/Mini-Reference-Guide/blob/main/Images/BigOChart.png alt="Big O Complexity Chart">
+[Big-O Chart with Cheatsheet[(https://www.bigocheatsheet.com/)
 </details>
 
 <details>
