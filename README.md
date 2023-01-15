@@ -475,6 +475,12 @@ An example of using a HashSet is:
     1
     3
     */
+    
+    // Note: Since a HashSet can only hold unique items, and .Add() is a boolean, you can simply call .Add(),
+    // without checking .Contains() first. Example:
+    
+    if (hash.Add(5)) // If '5' isn't in the HashSet already, then the statement will be true and 5 will be added.
+    
   }
 ```
 </details>
