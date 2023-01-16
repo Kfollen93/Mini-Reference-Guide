@@ -579,7 +579,7 @@ We're abstracting away the actual implmentation of how something works.  We're n
   
  <details>
    <summary><b>Inheritance</b></summary>
-   At the simplest level, Inheritance involves the child class inheriting data and behaviors from the parent class. Sticking with the car example, it would make sense to have a parent class named <code>Car</code>. This class would contain data that is shared among all cars such as: <code>type</code>, <code>model</code>, <code>year</code>, <code>color</code>, and so forth. The idea of this parent class is that it contains general data that our child classes can inherit when we create an object. For example, now that the parent class <code>Car</code> is complete, we could make a child class such as <code>BMW</code> that inherits from <code>Car</code> and create an object. This might look like:
+   At the simplest level, Inheritance involves the child class inheriting data and behaviors from the parent class. Within OOP, inhertiance can be defined as a "is-a" relationship between child and parent class. Sticking with the car example, it would make sense to have a parent class named <code>Car</code>. This class would contain data that is shared among all cars such as: <code>type</code>, <code>model</code>, <code>year</code>, <code>color</code>, and so forth. The idea of this parent class is that it contains general data that our child classes can inherit when we create an object. For example, now that the parent class <code>Car</code> is complete, we could make a child class such as <code>BMW</code> that inherits from <code>Car</code> and create an object. This might look like:
    
    ```cs
     class Car
