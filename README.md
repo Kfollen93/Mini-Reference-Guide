@@ -1579,7 +1579,7 @@ It is common to do this with the Database Context file such as:
   <summary><b>Should I use a Class, Record, or Struct?</b></summary>
     <details>
       <summary><b>Class</b></summary>
-        Classes are references types that are mutable by default (however it's possible to make an immutable class). Where a record can be viewed as simply a data structure, a class can hold data and behavior (defined by its methods).
+        Classes are references types that are mutable by default (however it's possible to make an immutable class). Where a record can be viewed as simply a data structure, a class can hold data and behavior (defined by its methods). A class should be created when you want to create a specific object that has certain features, in order to define the data along with the functionality.
     </details>
     <details>
       <summary><b>Record</b></summary>
