@@ -1564,7 +1564,7 @@ It is common to do this with the Database Context file such as:
   I have limited experience with creating and using Delegates, Actions, and Events within my day job as C#/.NET (mostly api/web) developer, yet I've found Unity to be an awesome place to learn how to implement and utilize this publisher/subscriber system. As an overview, you should do a quick search and read about the Observer Pattern.
     <details>
       <summary><b>Delegate</b></summary>
-        
+        Temp.
     </details>
         <details>
       <summary><b>Action</b></summary>
