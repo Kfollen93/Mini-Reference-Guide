@@ -276,10 +276,7 @@ public static int[] Merge(int[] left, int[] right)
             }
             
             // Alternatively this could be done using TryAdd()
-            if (dic.TryAdd(i, 1))
-              continue;
-            else 
-              dic[i]++;
+            if (!dic.TryAdd(i, 1)) dic[i]++;
         }
         
         // Loop through the K/V pair in the Dictionary, and check for when the Value is equal to one.
