@@ -255,23 +255,21 @@ public static int[] Merge(int[] left, int[] right)
  An example of using a Dictionary is:
   
   ```cs
-    // Every element appears twice except for one element in nums (Example: nums = [4,1,2,1,2]). Find that single one.
+    // Every element appears twice except for one element in nums.
+    // (Example: nums = [4,1,2,1,2]). Find that single one.
     public int SingleNumber(int[] nums)
     {
         // Create a Dictionary
         Dictionary<int, int> dic = new Dictionary<int, int>();
-  
         int value = 0;
-        
         foreach (int i in nums)
         {
-            // Loop through nums, and if the Dictionary does not already contain the key, then add it to the dictionary.
             if (!dic.ContainsKey(i))
             {
                 dic.Add(i, 1);
             }
             else
-            {   // Here, the key already exists, so instead I add 1 to the value for that key.
+            {
                 dic[i]++;
             }
             
@@ -279,17 +277,17 @@ public static int[] Merge(int[] left, int[] right)
             if (!dic.TryAdd(i, 1)) dic[i]++;
         }
         
-        // Loop through the K/V pair in the Dictionary, and check for when the Value is equal to one.
         foreach (KeyValuePair<int, int> pair in dic)
         {
             if (pair.Value.Equals(1))
             {
-                // Set value equal to the key that has a value of 1
                 value = pair.Key; 
             }
         }
-        // Returning value which is the key that had a value of 1.
         return value;
+        
+        // The example above is a bit overkill too, there's many ways to do this, but I wanted to display a potential way of using an array.
+        // You could solve this through LINQ's Group By, adding to HashSet, etc.
     }
 ```
 </details>
