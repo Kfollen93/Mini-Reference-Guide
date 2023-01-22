@@ -1512,6 +1512,12 @@ public class Solution
 </details>
 </details>
       </details>
+      
+## Class, Record, Struct
+<details>
+  <summary><b>Which Should I Use?</b></summary>
+
+</details>
  
 ## Miscellaneous
 <details>
