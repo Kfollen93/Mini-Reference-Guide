@@ -1516,6 +1516,7 @@ public class Solution
 ## Class, Record, Struct
 <details>
   <summary><b>Which Should I Use?</b></summary>
+  As with most programming related things, the answer is "it depends". Generally you will be using a standard Class to create and structure your projects. However, you may encounter times when a Class doesn't quite fit.
 
 </details>
  
