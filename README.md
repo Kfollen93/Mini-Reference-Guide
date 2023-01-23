@@ -1517,7 +1517,10 @@ public class Solution
 <details>
   <summary><b>Which Should I Use?</b></summary>
   As with most programming related things, the answer is "it depends". Generally you will be using a standard Class to create and structure your projects. However, you may encounter times when a Class doesn't quite fit.
-
+</details>
+<details>
+   <summary><b>Class</b></summary>
+   Classes are references types that are mutable by default (however it's possible to make an immutable class). Where a record can be viewed as simply a data structure, a class can hold data and behavior (defined by its methods). A class should be created when you want to create a specific object that has certain features, in order to define the data along with the functionality and behavior.
 </details>
  
 ## Miscellaneous
