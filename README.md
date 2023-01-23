@@ -1522,6 +1522,14 @@ public class Solution
    <summary><b>Class</b></summary>
    Classes are references types that are mutable by default (however it's possible to make an immutable class). Where a record can be viewed as simply a data structure, a class can hold data and behavior (defined by its methods). A class should be created when you want to create a specific object that has certain features, in order to define the data along with the functionality and behavior.
 </details>
+<details>
+   <summary><b>Record</b></summary>
+   Records are defaulted to immutable reference types. I've viewed records as simple sets of data. Where a class holds data with functionality, a record is just a data container. Records also use value-based equality, making them actually more similar to structs than classes in that sense.
+</details>
+<details>
+   <summary><b>Struct</b></summary>
+   Structs are value types that "Struct-ure" our data. A performance rule of thumb is that structs should be less than 16 bytes, which makes them typically fairly small. Since structs are passed by value, the size of the struct would be copied if it is passed to a function (compared to only a reference pointer (4 bytes) being passed). Therefore, if all the member fields are value types and it's less than 16 bytes, you should probably opt for using a struct. Two struct objects can also be checked for equality by value using ValueType.Equals(), doing this would not work for a class (as the default implementation of Object.Equals() checks for reference equality, and not the values within).
+</details>
  
 ## Miscellaneous
 <details>
