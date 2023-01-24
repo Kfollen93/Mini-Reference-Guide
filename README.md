@@ -5,12 +5,12 @@ Since I have found it is best to learn by doing, this mini guide uses C# code ex
 After shuffling through my notes and erasing/re-writing these topics numerous times on my whiteboard, I figured it would be worth making this public and sharing with others. <br>
 
 # Table of Contents  
-* Big O Notation :o:
-* Generic Collections :wrench:
-* Object Oriented Programming :classical_building:
-* Common Sorting Algorithms :balance_scale:
-* Binary Trees and Binary Search Trees :evergreen_tree:
-* Class, Record, Struct :scroll:
+* [Big O Notation](#big-o-notation) :o:
+* [Generic Collections](#generic-collections) :wrench:
+* [Object Oriented Programming](#object-oriented-programming) :classical_building:
+* [Common Sorting Algorithms](#common-searching-and-sorting-algorithms) :balance_scale:
+* [Binary Trees and Binary Search Trees](#binary-trees-and-binary-search-trees) :evergreen_tree:
+* [Class, Record, Struct](#class-record-struct) :scroll:
 * Miscellaneous *(WIP)*
 
 ## Big O Notation
@@ -898,7 +898,7 @@ namespace CodingProblem
 </details>
   </details>
   
-## Common Searching/Sorting Algorithms
+## Common Searching and Sorting Algorithms
  <details>
    <summary><b>Binary Search</b></summary>
    Binary Search is a fast algorithm to find a value in a sorted array (or any sorted sequence). The algorithm works by initially searching the entire sequence. At each step, the algorithm compares the median value in the search space to the target value. Due to the sequence being sorted, it can then eliminate half of the search space. By doing this repeatedly, it will eventually be left with a search space consisting of a single element, the target value/index, or we can return out of the function if the target does not exist at this point. The time complexity of the Binary Search algorithm is <b>O(log n)</b>, and space complexity is <b>O(n)</b>.
