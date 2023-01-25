@@ -11,6 +11,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Common Sorting Algorithms](#common-searching-and-sorting-algorithms) :balance_scale:
 * [Binary Trees and Binary Search Trees](#binary-trees-and-binary-search-trees) :evergreen_tree:
 * [Class, Record, Struct](#class-record-struct) :scroll:
+* [Dependency Injection](#dependency-injection) :pushpin:
 * Miscellaneous *(WIP)*
 
 ## Big O Notation
@@ -1531,8 +1532,8 @@ public class Solution
    Structs are value types that "Struct-ure" our data. A performance rule of thumb is that structs should be less than 16 bytes, which makes them typically fairly small. Since structs are passed by value, the size of the struct would be copied if it is passed to a function (compared to only a reference pointer (4 bytes) being passed). Therefore, if all the member fields are value types and it's less than 16 bytes, you should probably opt for using a struct. Two struct objects can also be checked for equality by value using ValueType.Equals(), doing this would not work for a class (as the default implementation of Object.Equals() checks for reference equality, and not the values within).
 </details>
  
-## Miscellaneous
-<details>
+ ## Dependency Injection
+ <details>
   <summary><b>Dependency Injection</b></summary>
   Dependency Injection deals with providing the objects that an object needs, instead of having it construct the objects themselves. It is a software design pattern which enables the development of loosely coupled code. This results in being able to more easily make future changes throughout the application. The last of the <a href="https://simple.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a> principles (the "D") stands for "Dependency Inversion Principle" which states: "that high-level modules/classes should not depend on low-level modules/classes. Both should depend upon abstractions. Secondly, abstractions should not depend upon details. Details should depend upon abstractions". <br>
 <br>
@@ -1573,6 +1574,7 @@ It is common to do this with the Database Context file such as:
 <br>
 </details>
 
+## Miscellaneous
 <details>
   <summary><b>Delegates, Actions, Events</b></summary>
   I have limited experience with creating and using Delegates, Actions, and Events within my day job as C#/.NET (mostly api/web) developer, yet I've found Unity to be an awesome place to learn how to implement and utilize this publisher/subscriber system. As an overview, you should do a quick search and read about the Observer Pattern.
