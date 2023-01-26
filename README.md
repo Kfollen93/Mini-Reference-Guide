@@ -12,7 +12,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Binary Trees and Binary Search Trees](#binary-trees-and-binary-search-trees) :evergreen_tree:
 * [Class, Record, Struct](#class-record-struct) :scroll:
 * [Dependency Injection](#dependency-injection) :pushpin:
-* [Value Types & Reference Types](#value-types--reference-types) :pushpin:
+* [Value Types & Reference Types](#value-types--reference-types) :point_right:
 * Miscellaneous *(WIP)*
 
 ## Big O Notation
