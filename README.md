@@ -12,6 +12,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Binary Trees and Binary Search Trees](#binary-trees-and-binary-search-trees) :evergreen_tree:
 * [Class, Record, Struct](#class-record-struct) :scroll:
 * [Dependency Injection](#dependency-injection) :pushpin:
+* [Value Types & Reference Types](#value-types--reference-types) :pushpin:
 * Miscellaneous *(WIP)*
 
 ## Big O Notation
@@ -1575,6 +1576,51 @@ The key here with the database context in specific, is that it when the service 
 <br>
 </details>
 
+
+## Value Types & Reference Types
+<details>
+  <summary><b>Value Types & Reference Types</b></summary>
+  Value Types directly contain their data, where Reference Types store references to their data. <br>
+  <br>
+  Common Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, struct, and short. <br>
+  <br>
+  Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
+  <br>
+  
+  It's worth noting that Value Types all have a default value based on their type (ex: 1 for Integer, false for boolean, etc.), contrary to all reference types having a default value of null.
+  
+  An example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field:
+  ```cs
+    public class MyClass
+    {
+        public int value;
+        public MyClass(int num) => value = num;
+    }
+    
+    // If a struct declares any field initializers, it must explicitly declare a constructor (otherwise there will be a compiler error).
+    // Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct.
+    // All fields without a field initializer or an assignment in a constructor are set to the default value.
+    public struct MyStruct
+    {
+        public int value;
+        public MyStruct(int num) => value = num;
+    }
+
+    MyClass myClassOne = new MyClass(7);
+    MyClass myClassTwo = myClassOne;
+    myClassTwo.value = 5;
+    Console.WriteLine("ClassOne has a value of: " + myClassOne.value);
+    // ClassOne has a value of: 5
+
+    MyStruct myStructOne = new MyStruct(7);
+    MyStruct myStructTwo = myStructOne;
+    myStructTwo.value = 5;
+    Console.WriteLine("StructOne has a value of: " + myStructOne.value);
+    // StructOne has a value of: 7
+```
+  
+</details>
+
 ## Miscellaneous
 <details>
   <summary><b>Delegates, Actions, Events</b></summary>
@@ -1624,47 +1670,6 @@ var employee = new Employee("Bob", "Smith"); // Works.
 There may be times where you want to create an object without any specifications, but also have the option to specify. In this case, you would need to define an empty constructor, along with a second constructor holding the fields you require. You are not restricted to only one constructor.
 </details>
 
-<details>
-  <summary><b>Value Types & Reference Types</b></summary>
-  Value Types directly contain their data, where Reference Types store references to their data. <br>
-  <br>
-  Common Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, struct, and short. <br>
-  <br>
-  Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
-  <br>
-  
-  It's worth noting that Value Types all have a default value based on their type (ex: 1 for Integer, false for boolean, etc.), contrary to all reference types having a default value of null.
-  
-  An example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field:
-  ```cs
-    public class MyClass
-    {
-        public int value;
-        public MyClass(int num) => value = num;
-    }
-    
-    // If a struct declares any field initializers, it must explicitly declare a constructor (otherwise there will be a compiler error).
-    // Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct.
-    // All fields without a field initializer or an assignment in a constructor are set to the default value.
-    public struct MyStruct
-    {
-        public int value;
-        public MyStruct(int num) => value = num;
-    }
 
-    MyClass myClassOne = new MyClass(7);
-    MyClass myClassTwo = myClassOne;
-    myClassTwo.value = 5;
-    Console.WriteLine("ClassOne has a value of: " + myClassOne.value);
-    // ClassOne has a value of: 5
-
-    MyStruct myStructOne = new MyStruct(7);
-    MyStruct myStructTwo = myStructOne;
-    myStructTwo.value = 5;
-    Console.WriteLine("StructOne has a value of: " + myStructOne.value);
-    // StructOne has a value of: 7
-```
-  
-</details>
 
 
