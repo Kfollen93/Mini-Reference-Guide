@@ -1579,17 +1579,26 @@ The key here with the database context in specific, is that it when the service 
 
 ## Value Types & Reference Types
 <details>
-  <summary><b>Value Types & Reference Types</b></summary>
-  Value Types directly contain their data, where Reference Types store references to their data. <br>
+  <summary><b>Value Types</b></summary>
+  Value Types directly contain their data.
   <br>
   Common Value Types consist of: bool, byte, char, decimal, double, enum, float, int, long, struct, and short. <br>
-  <br>
-  Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
+  Value Types all have a default value based on their type (ex: 0 for Integer, false for boolean, etc.)
+ </details>
+ 
+ <details>
+ <summary><b>Reference Types</b></summary>
+ Reference Types store references to their data.
+ <br>
+ Common Reference Types consist of: string, array (even if it consists of value types), class, delegate, record, interface, dynamic, and object. <br>
+ Reference Types all have a default value of null.
+</details>
+  
+ <details>
+ <summary><b>Example of Value vs Reference</b></summary>
+  An example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field: 
   <br>
   
-  It's worth noting that Value Types all have a default value based on their type (ex: 0 for Integer, false for boolean, etc.), contrary to all reference types having a default value of null.
-  
-  An example below shows the difference between a Struct (Value Type) and a Class (Reference Type) when setting a field:
   ```cs
     public class MyClass
     {
@@ -1618,8 +1627,10 @@ The key here with the database context in specific, is that it when the service 
     Console.WriteLine("StructOne has a value of: " + myStructOne.value);
     // StructOne has a value of: 7
 ```
-  
+
 </details>
+
+
 
 ## Miscellaneous
 <details>
