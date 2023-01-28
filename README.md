@@ -1382,7 +1382,7 @@ public IList<IList<int>> LevelOrder(TreeNode root)
 <details>
   
   <summary><b>Depth First Search</b></summary>
-  Depth First Search (DFS) is an algorithm used to traverse tree or graph structures. The algorithm starts at the root node, and then traverses are far as possible before backtracking. There are three commons ways to traverse a tree (or graph) in a DFS manner: Pre-Order, In-Order, and Post-Order. All of these traversal methods can be implemented iteratively (utilizing a Stack) or recursively.
+  Depth First Search (DFS) is an algorithm used to traverse tree or graph structures. The algorithm starts at the root node, and then traverses as far as possible before backtracking. There are three commons ways to traverse a tree (or graph) in a DFS manner: Pre-Order, In-Order, and Post-Order. All of these traversal methods can be implemented iteratively (utilizing a Stack) or recursively.
     <details>
       <summary><b>Pre-order Traversal</b></summary>
       Traverse the tree in Pre-order (Root, Left, Right). You could use this traversal when you want to create a copy of a binary search tree. <br>
