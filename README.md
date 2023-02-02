@@ -1574,7 +1574,7 @@ It is common to do this with the Database Context file such as:
        }
   }
 ```
-The key here with the database context in specific, is that it when the service is injected into the constructor of the class, the built in service takes on the responsibility of creating an instance of the dependency (the context) and disposing of it when it's no longer needed. You can configure the database lifetime in three ways: Transient, Scoped, and Singleton (the default lifetime is Scoped).
+The key here with the database context in specific, is that when the service is injected into the constructor of the class, the built in service takes on the responsibility of creating an instance of the dependency (the context) and disposing of it when it's no longer needed. You can configure the database lifetime in three ways: Transient, Scoped, and Singleton (the default lifetime is Scoped).
 <br>
 </details>
 
