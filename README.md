@@ -551,7 +551,8 @@ An example of using a Linked List is:
     }
     
     // This could also be simplified to:
-    public string Name { get; set; }
+    public string Name { get; set; } // Publicly get the value and pubicly set it.
+    public string Name { get; private set; } // Publicly get the value, but it can only be set privately within the class.
 }
 ```
 ```cs
