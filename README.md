@@ -334,6 +334,7 @@ public static int[] Merge(int[] left, int[] right)
       }
   
       /*
+      Print out would look like:
       1
       2
       3
