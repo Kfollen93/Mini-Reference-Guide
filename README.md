@@ -1456,16 +1456,38 @@ The key here with the database context in specific, is that when the service is 
   I have limited experience with creating and using Delegates, Actions, and Events within my day job as C#/.NET (mostly api/web) developer, yet I've found Unity to be an awesome place to learn how to implement and utilize this publisher/subscriber system. As an overview, you should do a quick search and read about the Observer Pattern.
     <details>
       <summary><b>Delegate</b></summary>
-        Temp.
-    </details>
-        <details>
-      <summary><b>Action</b></summary>
-        Temp
-    </details>
-        <details>
-      <summary><b>Event</b></summary>
-        Temp
-    </details>
+        As a basis, delegates enable you to store and call a function like it was a variable. For example, if you had your ordinary function:
+
+  ```cs
+  void HealthChangeHandler()
+  {
+    // Code
+  }
+  ```
+  To create a delegate from this method example, it would look like:
+  ```cs
+  delegate void HealthChangeHandler();
+  ```
+  This states what kind of function can be stored in the delegate. You would then still need an instance of the delegate:
+  ```cs
+  delegate void HealthChangeHandler();
+  HealthChangeHandler healthChangeHandler;
+  ```
+  Now a function could be assigned to this delegate:
+  ```cs
+  void ChangeHealth() { // Code to change health };
+  healthChangeHandler = ChangeHealth;
+  ```
+  This may not look at that useful, but the real magic and help of delegates come into play when you set up your delegate to call several different functions all at once.
+  </details>
+      <details>
+    <summary><b>Action</b></summary>
+      Temp
+  </details>
+      <details>
+    <summary><b>Event</b></summary>
+      Temp
+  </details>
 </details>
 
 <details>
