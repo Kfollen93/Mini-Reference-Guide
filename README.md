@@ -1453,7 +1453,7 @@ The key here with the database context in specific, is that when the service is 
 ## Miscellaneous
 <details>
   <summary><b>Delegates, Actions, Events</b></summary>
-  I have limited experience with creating and using Delegates, Actions, and Events within my day job as C#/.NET (mostly api/web) developer, yet I've found Unity to be an awesome place to learn how to implement and utilize this publisher/subscriber system. As an overview, you should do a quick search and read about the [Observer Pattern](https://refactoring.guru/design-patterns/observer).
+  I have limited experience with creating and using Delegates, Actions, and Events within my day job as C#/.NET (mostly api/web) developer, yet I've found Unity to be an awesome place to learn how to implement and utilize this publisher/subscriber system. As an overview, you should do a quick search and read about the Observer Pattern (https://refactoring.guru/design-patterns/observer).
     <details>
       <summary><b>Delegate</b></summary>
         As a basis, delegates enable you to store and call a function like it was a variable. For example, if you had your ordinary function:
