@@ -1501,6 +1501,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable
  
 public class HealthBarUI : MonoBehaviour
 {
+    [SerializeField] private Slider _enemyHealthBar;
     [SerializeField] private BaseEnemy _baseEnemyScript;
     private void OnEnable() => _baseEnemyScript.OnBaseEnemyHealthChange += UpdateEnemyHealthBar;
     private void OnDisable() => _baseEnemyScript.OnBaseEnemyHealthChange -= UpdateEnemyHealthBar;
