@@ -1478,7 +1478,36 @@ The key here with the database context in specific, is that when the service is 
   void ChangeHealth() { // Code to change health };
   healthChangeHandler = ChangeHealth;
   ```
-  This may not look at that useful, but the real magic and help of delegates come into play when you set up your delegate to call several different functions all at once.
+  This may not look at that useful, but the real magic and help of delegates come into play when you set up your delegate to call several different functions from different scripts. For example:
+
+```cs
+public class BaseEnemy : MonoBehaviour, IDamageable
+{
+    [SerializeField] private int _health;
+    public delegate void OnBaseEnemyHealthChange();
+    public OnBaseEnemyHealthChange onBaseEnemyHealthChange;
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent(out IDealDamage iDealDamage))
+        {
+            int dmgAmount = TakeDamage(iDealDamage);
+            onBaseEnemyHealthChange?.Invoke(dmgAmount);
+            _health -= dmgAmount;
+            if (_health <= 0) DestroyEnemy();
+        }
+    }
+ }
+ 
+public class HealthBarUI : MonoBehaviour
+{
+    [SerializeField] private BaseEnemy _baseEnemyScript;
+    private void OnEnable() => _baseEnemyScript.OnBaseEnemyHealthChange += UpdateEnemyHealthBar;
+    private void OnDisable() => _baseEnemyScript.OnBaseEnemyHealthChange -= UpdateEnemyHealthBar;
+    private void UpdateEnemyHealthBar(int amt) => _enemyHealthBar.value -= amt;
+}
+```
+
   </details>
       <details>
     <summary><b>Action</b></summary>
