@@ -1478,7 +1478,7 @@ The key here with the database context in specific, is that when the service is 
   void ChangeHealth() { // Code to change health };
   healthChangeHandler = ChangeHealth;
   ```
-  This may not look at that useful, but the real magic and help of delegates come into play when you set up your delegate to call several different functions from different scripts. For example:
+  This may not look at that useful, but the real magic and help of delegates come into play when you set up your delegate to call different functions from different scripts. For example:
 
 ```cs
 public class BaseEnemy : MonoBehaviour, IDamageable
@@ -1508,6 +1508,7 @@ public class HealthBarUI : MonoBehaviour
     private void UpdateEnemyHealthBar(int amt) => _enemyHealthBar.value -= amt;
 }
 ```
+Although in this case I still have a direct reference to the baseEnemyScript, I am not reliant on the Update() function to constantly poll waiting to update the healthbar UI. Instead, it's separated by having the UI listen for to the onBaseEnemyHealthChange event and then update the healthbar UI accordingly.
 
   </details>
       <details>
