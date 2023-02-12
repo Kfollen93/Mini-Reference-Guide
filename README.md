@@ -1508,7 +1508,8 @@ public class HealthBarUI : MonoBehaviour
     private void UpdateEnemyHealthBar(int amt) => _enemyHealthBar.value -= amt;
 }
 ```
-Although in this case I still have a direct reference to the baseEnemyScript, I am not reliant on the Update() function to constantly poll waiting to update the healthbar UI. Instead, it's separated by having the UI listen for to the onBaseEnemyHealthChange event and then update the healthbar UI accordingly.
+Although in this case I still have a direct reference to the baseEnemyScript, I am not reliant on the Update() function to constantly poll waiting to update the healthbar UI. Instead, it's separated by having the UI listen for to the onBaseEnemyHealthChange event and then update the healthbar UI accordingly. <br>
+Additionally, it's important to always unsubscribe to the function to prevent memory leaks. This is most commonly done in the OnDisable() function built in by Unity.
 
   </details>
       <details>
