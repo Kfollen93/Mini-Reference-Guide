@@ -1518,7 +1518,7 @@ Additionally, it's important to always unsubscribe to the function to prevent me
   </details>
       <details>
     <summary><b>Event</b></summary>
-      Temp
+     Events are similar to delegates. The key difference being that events can only be called from their own class. This is not to be confused with subscribing/unsubscribing from other classes which you can still do, but rather other classes would not be able to clear the event by setting it to null.
   </details>
 </details>
 
