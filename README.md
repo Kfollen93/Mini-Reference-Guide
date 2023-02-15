@@ -1518,7 +1518,7 @@ Additionally, it's important to always unsubscribe to the function to prevent me
   </details>
       <details>
     <summary><b>Event</b></summary>
-     Events are similar to delegates. The key difference being that events can only be called from their own class. This is not to be confused with subscribing/unsubscribing from other classes which you can still do, but rather other classes would not be able to clear the event by setting it to null.
+     Events are similar to delegates. The key difference being that events can only be called from their own class. This is not to be confused with subscribing/unsubscribing from other classes which you can still do, but rather other classes would not be able to clear the event by setting it to null. Therefore, events abstract and confine delegates. You could think of an event as having the option to add or remove (similar to a getter/setter property), but the thing that you would be adding or removing is a delegate reference.
   </details>
 </details>
 
