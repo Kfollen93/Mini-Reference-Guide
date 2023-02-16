@@ -1518,7 +1518,12 @@ Additionally, it's important to always unsubscribe to the function to prevent me
   </details>
       <details>
     <summary><b>Event</b></summary>
-     Events are similar to delegates. The key difference being that events can only be called from their own class. This is not to be confused with subscribing/unsubscribing from other classes which you can still do, but rather other classes would not be able to clear the event by setting it to null (or any other value). Therefore, events abstract and confine delegates.
+     Events are similar to delegates. The key difference being that events can only be called from their own class. This is not to be confused with subscribing/unsubscribing from other classes which you can still do, but rather other classes would not be able to clear the event by setting it to null (or any other value). Therefore, events abstract and confine delegates. <br>
+<br>
+The best explanation I've found is from Jon Skeet, the author of the "C# in Depth" books, from a StackOverFlow posts, where he commented: <br>
+```
+An event is fundamentally like a property - it's a pair of add/remove methods (instead of the get/set of a property). When you declare a field-like event (i.e. one where you don't specify the add/remove bits yourself) a public event is created, and a private backing field. This lets you raise the event privately, but allow public subscription. With a public delegate field, anyone can remove other people's event handlers, raise the event themselves, etc - it's an encapsulation disaster.
+```
   </details>
 </details>
 
@@ -1552,7 +1557,5 @@ var employee = new Employee("Bob", "Smith"); // Works.
 <br>
 There may be times where you want to create an object without any specifications, but also have the option to specify. In this case, you would need to define an empty constructor, along with a second constructor holding the fields you require. You are not restricted to only one constructor.
 </details>
-
-
 
 
