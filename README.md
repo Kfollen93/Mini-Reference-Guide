@@ -52,6 +52,7 @@ https://www.bigocheatsheet.com/
     
       while (leftPointer <= rightPointer)
       {
+          // Prevent integer overflow.
           int mid = leftPointer + (rightPointer - leftPointer) / 2;
 
           if (arr[mid] == target)
