@@ -1563,3 +1563,4 @@ There may be times where you want to create an object without any specifications
 ## Tips
  - If collection is sorted, could you utilize Binary Search?
  - When working with Entity Framework think about when you are calling `_db.SaveChanges()` (i.e. don't Add() / SaveChanges() within a loop). There's an option for `AddRange()` and then calling `_db.SaveChanges()` once.
+ - If you need to concatenate strings more than a few times, use StringBuilder.
