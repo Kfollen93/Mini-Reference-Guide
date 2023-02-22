@@ -1561,6 +1561,6 @@ There may be times where you want to create an object without any specifications
 </details>
 
 ## Tips
- - If collection needs to be sorted, could you utilize Binary Search to perform whatever it is that you need on it? However, do not sort a collection (O n log n) purely in order to utilize Binary Search (O log n), as that largely defeats the advantages.
+ - If a collection needs to be sorted, could you utilize Binary Search to perform whatever it is that you need on it? However, do not sort a collection (O n log n) purely in order to utilize Binary Search (O log n), as that largely defeats the advantages.
  - When working with Entity Framework think about when you are calling `_db.SaveChanges()` (i.e. don't Add() / SaveChanges() within a loop). There's an option for `AddRange()` and then calling `_db.SaveChanges()` once.
  - If you need to concatenate strings more than a few times, use StringBuilder.
