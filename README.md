@@ -1565,4 +1565,4 @@ There may be times where you want to create an object without any specifications
  - When working with Entity Framework think about when you are calling `_db.SaveChanges()` (i.e. don't Add() / SaveChanges() within a loop). There's an option for `AddRange()` and then calling `_db.SaveChanges()` once.
  - If you need to concatenate strings more than a few times, use StringBuilder.
  - If start to get somewhere beyond 3+ parameters, consider consolidating it into its own object and passing that in instead.
- - Clarify your intent when when querying for (a) record(s); `SingleOrDefault()` states that the query should result in only one record, whereas FirstOrDefault() will return the first record even though there may be many.
+ - Clarify your intent when when querying for (a) record(s); `SingleOrDefault()` states that the query should result in only one record, whereas `FirstOrDefault()` will return the first record even though there may be many.
