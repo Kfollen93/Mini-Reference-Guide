@@ -1566,3 +1566,4 @@ There may be times where you want to create an object without any specifications
  - If you need to concatenate strings more than a few times, use StringBuilder.
  - If start to get somewhere beyond 3+ parameters, consider consolidating it into its own object and passing that in instead.
  - Clarify your intent when when querying for (a) record(s); `SingleOrDefault()` states that the query should result in only one record, whereas `FirstOrDefault()` will return the first record even though there may be many.
+ - Try to prevent deep level nesting of conditional statements. See if you can add a guard clause and return out early instead.
