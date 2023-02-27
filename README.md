@@ -1561,9 +1561,14 @@ There may be times where you want to create an object without any specifications
 </details>
 
 ## Tips
+<details>
+  <summary><b>Unorganized (WIP)</b></summary>
+  
  - If a collection is already sorted, could you utilize Binary Search to perform whatever it is that you need on it? However, do not sort a collection (O n log n) purely in order to utilize Binary Search (O log n), as that largely defeats the advantages.
  - When working with Entity Framework think about when you are calling `_db.SaveChanges()` (i.e. don't Add() / SaveChanges() within a loop). There's an option for `AddRange()` and then calling `_db.SaveChanges()` once.
  - If you need to concatenate strings more than a few times, use StringBuilder.
  - If start to get somewhere beyond 3+ parameters, consider consolidating it into its own object and passing that in instead.
  - Clarify your intent when when querying for (a) record(s); `SingleOrDefault()` states that the query should result in only one record, whereas `FirstOrDefault()` will return the first record even though there may be many.
  - Try to prevent deep level nesting of conditional statements. See if you can add a guard clause and return out early instead.
+ 
+</details>
