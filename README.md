@@ -1333,7 +1333,7 @@ public class Solution
 </details>
       </details>
       
-## Class, Record, Struct
+## Class, Record, Struct, Abstract Class, Interface
 <details>
   <summary><b>Which Should I Use?</b></summary>
   As with most programming related things, the answer is "it depends". Generally you will be using a standard Class to create and structure your projects. However, you may encounter times when a Class doesn't quite fit.
@@ -1349,6 +1349,14 @@ public class Solution
 <details>
    <summary><b>Struct</b></summary>
    Structs are value types that "Struct-ure" our data. A performance rule of thumb is that structs should be less than 16 bytes, which makes them typically fairly small. Since structs are passed by value, the size of the struct would be copied if it is passed to a function (compared to only a reference pointer (4 bytes) being passed). Therefore, if all the member fields are value types and it's less than 16 bytes, you should probably opt for using a struct. Two struct objects can also be checked for equality by value using ValueType.Equals(), doing this would not work for a class (as the default implementation of Object.Equals() checks for reference equality, and not the values within).
+</details>
+<details>
+   <summary><b>Abstract Class</b></summary>
+   Temp
+</details>
+<details>
+   <summary><b>Interface</b></summary>
+Temp.
 </details>
  
  ## Dependency Injection
