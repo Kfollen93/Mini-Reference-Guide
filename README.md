@@ -1352,8 +1352,7 @@ public class Solution
 </details>
 <details>
    <summary><b>Abstract Class</b></summary>
-   Temp
-</details>
+   Cannot be instantiated. In order to get access to it, it must be inherited from another class; therefore, it's often featured as a "base class" functionality. C# does not support multiple class inheritance.
 <details>
    <summary><b>Interface</b></summary>
 Temp.
