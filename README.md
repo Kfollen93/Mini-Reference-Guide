@@ -1352,7 +1352,7 @@ public class Solution
 </details>
 <details>
    <summary><b>Abstract Class</b></summary>
-   Cannot be instantiated. In order to get access to it, it must be inherited from another class; therefore, it's often featured as a "base class" functionality. C# does not support multiple class inheritance.
+   Cannot be instantiated. In order to get access to it, it must be inherited from another class; therefore, it's often featured as a "base class" functionality. C# does not support multiple class inheritance. Abstract classes are great to define a template for a group of classes that will inherit from it, due to those classes sharing common features, but also restricting the (abstract) class itself from being instantiated.
 </details>
 <details>
    <summary><b>Interface</b></summary>
