@@ -1356,7 +1356,7 @@ public class Solution
 </details>
 <details>
    <summary><b>Interface</b></summary>
-Temp.
+Interfaces must be implemented by another class in order to be used, but you can use several interfaces within the same class. Interfaces cannot be used to create objects (just like Abstract Classes). An Interface is often defined as a "contract". Any class that implements the interface, needs to implement all of the members defined in the interface. This is the big difference from an Abstract Class, in that data members are not defined in an interface; it is just a collection of properties/function declarations.
 </details>
  
  ## Dependency Injection
