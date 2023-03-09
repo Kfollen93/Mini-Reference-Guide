@@ -1541,6 +1541,8 @@ Events are then called and utilized in a similar fashion to the delegate section
 public delegate void OnGameStart();
 public static event OnGameStart onGameStart;
 ```
+<br>
+However, another defining difference between a Delegate vs an Event is that delegates typically hold data (like a variable that holds a function), that can then be a parameter within a method. Contrast to delegates, events are closer to having an "event system" with sub/pub events.
 </details>
       
 </details>
