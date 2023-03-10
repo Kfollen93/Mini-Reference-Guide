@@ -1536,6 +1536,7 @@ The best explanation I've found is from Jon Skeet, the author of the "C# in Dept
 *An event is fundamentally like a property - it's a pair of add/remove methods (instead of the get/set of a property). When you declare a field-like event (i.e. one where you don't specify the add/remove bits yourself) a public event is created, and a private backing field. This lets you raise the event privately, but allow public subscription. With a public delegate field, anyone can remove other people's event handlers, raise the event themselves, etc - it's an encapsulation disaster.<br>
 https://stackoverflow.com/questions/3028724/why-do-we-need-the-event-keyword-while-defining-events*
 <br>
+<br>
 Events are then called and utilized in a similar fashion to the delegate section above:
 ```cs
 public delegate void OnGameStart();
