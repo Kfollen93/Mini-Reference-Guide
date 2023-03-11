@@ -1590,5 +1590,16 @@ There may be times where you want to create an object without any specifications
  - If start to get somewhere beyond 4+ parameters, consider consolidating it into its own object and passing that in instead.
  - Clarify your intent when when querying for (a) record(s); `SingleOrDefault()` states that the query should result in only one record, whereas `FirstOrDefault()` will return the first record even though there may be many.
  - Try to prevent deep level nesting of conditional statements. See if you can add a guard clause and return out early instead.
+ - Conditional statements and null checks can be cleaned up with null-coalescing and `??` checks, such as:
+```cs
+Dog dog;
+string name = dog?.Name;
+```
+In this case you can check if the `.Name` property is null or not, and if it is, it will not throw an error. Furthermore, you could pair this up with a default value if `.Name` was null. You can do this by using the `??` operator:
+```cs
+Dog dog;
+string name = dog?.Name ?? "Bruno";
+```
+If `.Name` was null,  then it would return "Bruno", otherwise, it would return the `dog.Name` value.
  
 </details>
