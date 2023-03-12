@@ -1594,12 +1594,15 @@ There may be times where you want to create an object without any specifications
 ```cs
 Dog dog;
 string name = dog?.Name;
+// You could also chain further checks such as if you wanted the length.
+// Now if dog is null, it won't throw an error, and if Name is null, it won't throw an error for checking the Length.
+int lengthOfName = dog?.Name?.Length;
 ```
 In this case you can check if the `.Name` property is null or not, and if it is, it will not throw an error. Furthermore, you could pair this up with a default value if `.Name` was null. You can do this by using the `??` operator:
 ```cs
 Dog dog;
 string name = dog?.Name ?? "Bruno";
 ```
-If `.Name` was null,  then it would return "Bruno", otherwise, it would return the `dog.Name` value.
+If `.Name` was null, then it would return "Bruno", otherwise, it would return the `dog.Name` value.
  
 </details>
