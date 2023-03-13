@@ -10,7 +10,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Object Oriented Programming](#object-oriented-programming) :classical_building:
 * [Common Sorting Algorithms](#common-searching-and-sorting-algorithms) :balance_scale:
 * [Binary Trees and Binary Search Trees](#binary-trees-and-binary-search-trees) :evergreen_tree:
-* [Class, Record, Struct, Abstract Class, Interface](#class-record-struct) :scroll:
+* [Class, Record, Struct, Abstract Class, Interface](#class-record-struct-abstract-class-interface) :scroll:
 * [Dependency Injection](#dependency-injection) :pushpin:
 * [Value Types & Reference Types](#value-types--reference-types) :point_right:
 * Miscellaneous *(WIP)*
