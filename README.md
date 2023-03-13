@@ -14,7 +14,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Dependency Injection](#dependency-injection) :pushpin:
 * [Value Types & Reference Types](#value-types--reference-types) :point_right:
 * Miscellaneous *(WIP)*
-* Tips *(WIP)* :notebook:	
+* [Tips](#tips) *(WIP)* :notebook:	
 
 ## Big O Notation
 <details>
