@@ -1556,6 +1556,7 @@ As an example, you may want to specify a required first name and last name when 
 <br>
 
 ```cs
+// You can create a constructor with the shortcut by typing "ctor" and tab in Visual Studio.
 class Employee
 {
   public string FirstName { get; set; }
@@ -1579,6 +1580,26 @@ var employee = new Employee("Bob", "Smith"); // Works.
 There may be times where you want to create an object without any specifications, but also have the option to specify. In this case, you would need to define an empty constructor, along with a second constructor holding the fields you require. You are not restricted to only one constructor.
 </details>
 
+<details>
+<summary><b>Better Null Checking</b></summary>
+  Conditional statements and null checks can be cleaned up with null-coalescing and `??` checks, such as: <br>
+  <br>
+  ```cs
+  Dog dog;
+  string name = dog?.Name;
+  // You could also chain further checks such as if you wanted the length.
+  // Now if dog is null, it won't throw an error, and if Name is null, it won't throw an error for checking the Length.
+  int lengthOfName = dog?.Name?.Length;
+  ```
+In this case you can check if the `.Name` property is null or not, and if it is, it will not throw an error. Furthermore, you could pair this up with a default value if `.Name` was null. You can do this by using the `??` operator:
+```cs
+Dog dog;
+string name = dog?.Name ?? "Bruno";
+```
+If `.Name` was null, then it would return "Bruno", otherwise, it would return the `dog.Name` value.
+
+</details>
+
 ## Tips
 <details>
   <summary><b>Unorganized (WIP)</b></summary>
@@ -1590,19 +1611,4 @@ There may be times where you want to create an object without any specifications
  - If start to get somewhere beyond 4+ parameters, consider consolidating it into its own object and passing that in instead.
  - Clarify your intent when when querying for (a) record(s); `SingleOrDefault()` states that the query should result in only one record, whereas `FirstOrDefault()` will return the first record even though there may be many.
  - Try to prevent deep level nesting of conditional statements. See if you can add a guard clause and return out early instead.
- - Conditional statements and null checks can be cleaned up with null-coalescing and `??` checks, such as:
-```cs
-Dog dog;
-string name = dog?.Name;
-// You could also chain further checks such as if you wanted the length.
-// Now if dog is null, it won't throw an error, and if Name is null, it won't throw an error for checking the Length.
-int lengthOfName = dog?.Name?.Length;
-```
-In this case you can check if the `.Name` property is null or not, and if it is, it will not throw an error. Furthermore, you could pair this up with a default value if `.Name` was null. You can do this by using the `??` operator:
-```cs
-Dog dog;
-string name = dog?.Name ?? "Bruno";
-```
-If `.Name` was null, then it would return "Bruno", otherwise, it would return the `dog.Name` value.
- 
 </details>
