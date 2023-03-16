@@ -1584,6 +1584,7 @@ There may be times where you want to create an object without any specifications
 <summary><b>Better Null Checking</b></summary>
   Conditional statements and null checks can be cleaned up with null-coalescing and `??` checks, such as: <br>
   <br>
+  
   ```cs
   Dog dog;
   string name = dog?.Name;
