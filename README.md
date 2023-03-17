@@ -1612,4 +1612,5 @@ If `.Name` was null, then it would return "Bruno", otherwise, it would return th
  - If start to get somewhere beyond 4+ parameters, consider consolidating it into its own object and passing that in instead.
  - Clarify your intent when when querying for (a) record(s); `SingleOrDefault()` states that the query should result in only one record, whereas `FirstOrDefault()` will return the first record even though there may be many.
  - Try to prevent deep level nesting of conditional statements. See if you can add a guard clause and return out early instead.
+ - Bulk updating/inserting is slow in Entity Framework (particularly if you're not using Entity Framework Core). There are ways to speed this up with setting AutoDetectChangesEnabled to false. Better yet, there are nuget packages for bulk inserting/saving (or you can execute sql commands). Even better, EFC 7.0 added built in bulk operations.
 </details>
