@@ -1597,7 +1597,7 @@ In this case you can check if the `.Name` property is null or not, and if it is,
 Dog dog;
 string name = dog?.Name ?? "Bruno";
 ```
-If `.Name` was null, then it would return "Bruno", otherwise, it would return the `dog.Name` value.
+If `.Name` was null, then it would return "Bruno", otherwise, it would return the `dog.Name` value. I've found this to be super helpful for minimizing the explicit conditional null checks that I would otherwise have littered everywhere.
 
 </details>
 
