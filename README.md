@@ -1461,8 +1461,9 @@ The key here with the database context in specific, is that when the service is 
 
 ## Delegates, Actions, and Events
 <details>
-  <summary><b>Delegates, Actions, Events</b></summary>
+  <summary><b>Overview</b></summary>
   I have limited experience with creating and using Delegates, Actions, and Events within my day job as C#/.NET (mostly api/web) developer, yet I've found Unity to be an awesome place to learn how to implement and utilize this publisher/subscriber system. As an overview, you should do a quick search and read about the Observer Pattern (https://refactoring.guru/design-patterns/observer).
+    </details>
     <details>
       <summary><b>Delegate</b></summary>
         As a basis, delegates enable you to store and call a function like it was a variable. For example, if you had your ordinary function:
@@ -1543,8 +1544,6 @@ public static event OnGameStart onGameStart;
 ```
 <br>
 However, another defining difference between a Delegate vs an Event is that delegates typically hold data (like a variable that holds a function), that can then be a parameter within a method. Contrast to delegates, events are closer to having an "event system" with sub/pub events.
-</details>
-      
 </details>
 
 ## Miscellaneous
