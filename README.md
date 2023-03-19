@@ -13,6 +13,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Class, Record, Struct, Abstract Class, Interface](#class-record-struct-abstract-class-interface) :scroll:
 * [Dependency Injection](#dependency-injection) :pushpin:
 * [Value Types & Reference Types](#value-types--reference-types) :point_right:
+* [Delegates, Actions, and Events](#delegates-actions-and-events)
 * Miscellaneous *(WIP)*
 * [Tips](#tips) *(WIP)* :notebook:	
 
@@ -1458,7 +1459,93 @@ The key here with the database context in specific, is that when the service is 
 
 </details>
 
+## Delegates, Actions, and Events
+<details>
+  <summary><b>Delegates, Actions, Events</b></summary>
+  I have limited experience with creating and using Delegates, Actions, and Events within my day job as C#/.NET (mostly api/web) developer, yet I've found Unity to be an awesome place to learn how to implement and utilize this publisher/subscriber system. As an overview, you should do a quick search and read about the Observer Pattern (https://refactoring.guru/design-patterns/observer).
+    <details>
+      <summary><b>Delegate</b></summary>
+        As a basis, delegates enable you to store and call a function like it was a variable. For example, if you had your ordinary function:
 
+  ```cs
+  void HealthChangeHandler()
+  {
+    // Code
+  }
+  ```
+  To create a delegate from this method example, it would look like:
+  ```cs
+  delegate void HealthChangeHandler();
+  ```
+  This states what kind of function can be stored in the delegate. You would then still need an instance of the delegate:
+  ```cs
+  delegate void HealthChangeHandler();
+  HealthChangeHandler healthChangeHandler;
+  ```
+  Now a function could be assigned to this delegate:
+  ```cs
+  void ChangeHealth() { // Code to change health };
+  healthChangeHandler = ChangeHealth;
+  ```
+  This may not look at that useful, but the real magic and help of delegates come into play when you set up your delegate to call different functions from different scripts. For example:
+
+```cs
+public class BaseEnemy : MonoBehaviour, IDamageable
+{
+    [SerializeField] private int _health;
+    public delegate void OnBaseEnemyHealthChange();
+    public OnBaseEnemyHealthChange onBaseEnemyHealthChange;
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent(out IDealDamage iDealDamage))
+        {
+            int dmgAmount = TakeDamage(iDealDamage);
+            onBaseEnemyHealthChange?.Invoke(dmgAmount);
+            _health -= dmgAmount;
+            if (_health <= 0) DestroyEnemy();
+        }
+    }
+ }
+ 
+public class HealthBarUI : MonoBehaviour
+{
+    [SerializeField] private Slider _enemyHealthBar;
+    [SerializeField] private BaseEnemy _baseEnemyScript;
+    private void OnEnable() => _baseEnemyScript.OnBaseEnemyHealthChange += UpdateEnemyHealthBar;
+    private void OnDisable() => _baseEnemyScript.OnBaseEnemyHealthChange -= UpdateEnemyHealthBar;
+    private void UpdateEnemyHealthBar(int amt) => _enemyHealthBar.value -= amt;
+}
+```
+Although in this case I still have a direct reference to the baseEnemyScript, I am not reliant on the Update() function to constantly poll waiting to update the healthbar UI. Instead, it's separated by having the UI listen for the onBaseEnemyHealthChange event and then update the healthbar UI accordingly. <br>
+Additionally, it's important to always unsubscribe to the function to prevent memory leaks. This is most commonly done in the OnDisable() function built in by Unity.
+
+  </details>
+      <details>
+    <summary><b>Action</b></summary>
+      Temp
+  </details>
+  <details>
+   <summary><b>Event</b></summary>
+     Events are similar to delegates. The key difference being that events can only be called from their own class. This is not to be confused with subscribing/unsubscribing from other classes which you can still do, but rather other classes would not be able to clear the event by setting it to null (or any other value). Therefore, events abstract and confine delegates. <br>
+     <br>
+
+The best explanation I've found is from Jon Skeet, the author of the "C# in Depth" books, from a StackOverFlow posts, where he commented: <br>
+
+*An event is fundamentally like a property - it's a pair of add/remove methods (instead of the get/set of a property). When you declare a field-like event (i.e. one where you don't specify the add/remove bits yourself) a public event is created, and a private backing field. This lets you raise the event privately, but allow public subscription. With a public delegate field, anyone can remove other people's event handlers, raise the event themselves, etc - it's an encapsulation disaster.<br>
+https://stackoverflow.com/questions/3028724/why-do-we-need-the-event-keyword-while-defining-events*
+<br>
+<br>
+Events are then called and utilized in a similar fashion to the delegate section above:
+```cs
+public delegate void OnGameStart();
+public static event OnGameStart onGameStart;
+```
+<br>
+However, another defining difference between a Delegate vs an Event is that delegates typically hold data (like a variable that holds a function), that can then be a parameter within a method. Contrast to delegates, events are closer to having an "event system" with sub/pub events.
+</details>
+      
+</details>
 
 ## Miscellaneous
 <details>
