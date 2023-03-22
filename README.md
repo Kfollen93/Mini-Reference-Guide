@@ -720,6 +720,12 @@ foreach (var shape in shapes)
 
   </details>
   
+## SOLID Principles
+ <details>
+    <summary><b>Overview</b></summary>
+  Temp
+ </details>
+   
 ## Common Searching and Sorting Algorithms
  <details>
    <summary><b>Binary Search</b></summary>
