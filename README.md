@@ -725,6 +725,28 @@ foreach (var shape in shapes)
     <summary><b>Overview</b></summary>
   Temp
  </details>
+  <details>
+    <summary><b>Single Responsibility Principle</b></summary>
+  Temp
+ </details>
+   <details>
+    <summary><b>Open-closed Principle</b></summary>
+  Temp
+ </details>
+    <details>
+    <summary><b>Liskov substitution Principle</b></summary>
+  Temp
+   </details>
+       <details>
+    <summary><b>Interface Segregation Principle</b></summary>
+  Temp
+   </details>
+          <details>
+    <summary><b>Dependency Inversion Principle</b></summary>
+  Temp
+   </details>
+ </details>
+ 
    
 ## Common Searching and Sorting Algorithms
  <details>
