@@ -723,10 +723,11 @@ foreach (var shape in shapes)
 ## SOLID Principles
  <details>
     <summary><b>Overview</b></summary>
-  SOLID consists of a group of design principles that enable programmers to write more modular and maintainble code.
+  SOLID consists of a group of design principles that enable programmers to write more modular and maintainble code that follows object oriented design. There's a large focus on the maintainability of a project as it grows. For small projects, it may not be worth the additional effort to strictly adhere to all of these principles, but for larger projects it can save a lot of time and headaches when it comes to extending the project and/or refactoring as requests often change.
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
+    SRP 
   Temp
  </details>
    <details>
