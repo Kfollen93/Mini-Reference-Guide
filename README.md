@@ -723,7 +723,7 @@ foreach (var shape in shapes)
 ## SOLID Principles
  <details>
     <summary><b>Overview</b></summary>
-  SOLID consists of a group of design principles that enable programmers to remote more modular and maintainble code.
+  SOLID consists of a group of design principles that enable programmers to write more modular and maintainble code.
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
