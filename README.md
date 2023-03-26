@@ -8,7 +8,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Big O Notation](#big-o-notation) :o:
 * [Generic Collections](#generic-collections) :wrench:
 * [Object Oriented Programming](#object-oriented-programming) :classical_building:
-* SOLID Principles *(WIP)*
+* [SOLID Principles](#solid-principles) *(WIP)*
 * [Common Sorting Algorithms](#common-searching-and-sorting-algorithms) :balance_scale:
 * [Binary Trees and Binary Search Trees](#binary-trees-and-binary-search-trees) :evergreen_tree:
 * [Class, Record, Struct, Abstract Class, Interface](#class-record-struct-abstract-class-interface) :scroll:
