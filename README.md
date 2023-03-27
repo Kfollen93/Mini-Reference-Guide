@@ -16,7 +16,7 @@ After shuffling through my notes and erasing/re-writing these topics numerous ti
 * [Value Types & Reference Types](#value-types--reference-types) :point_right:
 * [Delegates, Actions, and Events](#delegates-actions-and-events)
 * [Miscellaneous](#miscellaneous) *(WIP)*
-* [Tips](#tips) *(WIP)* :notebook:	
+* [Tips](#tips) :notebook:	
 
 ## Big O Notation
 <details>
