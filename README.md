@@ -1632,7 +1632,7 @@ If `.Name` was null, then it would return "Bruno", otherwise, it would return th
 
 ## Tips
 <details>
-  <summary><b>Unorganized (WIP)</b></summary>
+  <summary><b>Random Bullets (WIP)</b></summary>
   
  - If a collection is already sorted, could you utilize Binary Search to perform whatever it is that you need on it? However, do not sort a collection (O n log n) purely in order to utilize Binary Search (O log n), as that largely defeats the advantages.
  - When working with Entity Framework think about when you are calling `_db.SaveChanges()` (i.e. don't Add() / SaveChanges() within a loop). There's an option for `AddRange()` and then calling `_db.SaveChanges()` once.
