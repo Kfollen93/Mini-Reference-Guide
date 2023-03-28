@@ -727,7 +727,7 @@ foreach (var shape in shapes)
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
-    Every class and function should have one responsibility.
+    Every class and function should have only one responsibility. As from the author, Robert C. Martin: "A class should have one, and only one, reason to change."
  </details>
    <details>
     <summary><b>Open-closed Principle</b></summary>
