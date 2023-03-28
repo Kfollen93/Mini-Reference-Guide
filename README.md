@@ -727,8 +727,7 @@ foreach (var shape in shapes)
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
-    SRP 
-  Temp
+    Every class and function should have one responsibility.
  </details>
    <details>
     <summary><b>Open-closed Principle</b></summary>
