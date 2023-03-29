@@ -727,7 +727,33 @@ foreach (var shape in shapes)
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
-    Every class and function should have only one responsibility. As from the author, Robert C. Martin: "A class should have one, and only one, reason to change."
+Every class and function should have only one responsibility. As from the author, Robert C. Martin: "A class should have one, and only one, reason to change.". I     try to keep my functions limited to one responsbility,  but I sometimes stretch my classes; find what works for you. An example of the SRP while creating a character in a video game engine such as Unity 3d would be: <br>
+    
+```cs
+public class InputController
+{
+  private void InitializeInput() // code
+}
+
+public class MovementController
+{
+  private void Walking()
+  {
+    // code
+  }
+  private void Running()
+  {
+    // code
+  }
+}
+
+public class CharacterAnimations
+{
+  private void InitializeAnimations() // code
+}
+```
+Plus many more (effects, sounds, etc)... You could tie this together as one big `PlayableCharacter` class but the code quickly becomes hard to maintain and would grow very large, along with of course, violating the SRP.
+  
  </details>
    <details>
     <summary><b>Open-closed Principle</b></summary>
