@@ -757,7 +757,7 @@ Plus many more (effects, sounds, etc)... You could tie this together as one big 
  </details>
    <details>
     <summary><b>Open-closed Principle</b></summary>
-  Temp
+  Software entities should be open for extension, but closed for modification.
  </details>
     <details>
     <summary><b>Liskov substitution Principle</b></summary>
