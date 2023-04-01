@@ -761,7 +761,7 @@ Plus many more (effects, sounds, etc)... You could tie this together as one big 
  </details>
     <details>
     <summary><b>Liskov substitution Principle</b></summary>
-  Temp
+  A program using a base class should be able to use any of its derived classes without knowing it, and without the program's correctness being affected. 
    </details>
        <details>
     <summary><b>Interface Segregation Principle</b></summary>
