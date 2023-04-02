@@ -765,7 +765,7 @@ Plus many more (effects, sounds, etc)... You could tie this together as one big 
    </details>
        <details>
     <summary><b>Interface Segregation Principle</b></summary>
-  Temp
+  “Clients should not be forced to depend upon interfaces that they do not use.”
    </details>
           <details>
     <summary><b>Dependency Inversion Principle</b></summary>
