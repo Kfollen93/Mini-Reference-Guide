@@ -723,11 +723,13 @@ foreach (var shape in shapes)
 ## SOLID Principles
  <details>
     <summary><b>Overview</b></summary>
-  SOLID consists of a group of design principles that enable programmers to write more modular and maintainble code that follows object oriented design. There's a large focus on the maintainability of a project as it grows. For small projects, it may not be worth the additional effort to strictly adhere to all of these principles, but for larger projects it can save a lot of time and headaches when it comes to extending the project and/or refactoring as requests often change.
+  SOLID consists of a group of design principles that enable programmers to write more modular and maintainble code that follows object oriented design. There's a large focus on the maintainability of a project as it grows. For small projects, it may not be worth the additional effort to strictly adhere to all of these principles, but for larger projects it can save a lot of time and headaches when it comes to extending the project and/or refactoring as requests often change. <br>
+<br>
+You can read more about the principles from Robert C. Martin's "Design Principles and Design Patterns" paper, along with his "Clean Code" book.
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
-"A class should have only one reason to change." I try to keep my functions limited to one responsbility,  but I sometimes stretch my classes; find what works for you. An example of the SRP while creating a character in a video game engine such as Unity 3d would be: <br>
+"A class or module should have one, and only one, reason to change." I try to keep my functions limited to one responsbility,  but I sometimes stretch my classes; find what works for you. An example of the SRP while creating a character in a video game engine such as Unity 3d would be: <br>
     
 ```cs
 public class InputController
@@ -757,19 +759,19 @@ Plus many more (effects, sounds, etc)... You could tie this together as one big 
  </details>
    <details>
     <summary><b>Open-closed Principle</b></summary>
-“Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.”
+“A module should be open for extension but closed for modification.”
  </details>
     <details>
     <summary><b>Liskov substitution Principle</b></summary>
-  “Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.” A program using a base class should be able to use any of its derived classes without knowing it, and without the program's correctness being affected. 
+  “Subclasses should be substitutable for their base classes.” A program using a base class should be able to use any of its derived classes without knowing it, and without the program's correctness being affected. 
    </details>
        <details>
     <summary><b>Interface Segregation Principle</b></summary>
-“Clients should not be forced to depend upon interfaces that they do not use.”
+“Many client specific interfaces are better than one general purpose interface.”
    </details>
           <details>
     <summary><b>Dependency Inversion Principle</b></summary>
-  “High-level modules should not depend upon low-level modules. Both should depend upon abstractions. Abstractions should not depend upon details. Details should depend upon abstractions.”
+  “Depend upon Abstractions. Do not depend upon concretions.”
    </details>
  </details>
  
