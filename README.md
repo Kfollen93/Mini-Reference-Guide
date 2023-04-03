@@ -727,7 +727,7 @@ foreach (var shape in shapes)
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
-Every class and function should have only one responsibility. As from the author, Robert C. Martin: "A class should have one, and only one, reason to change.". I     try to keep my functions limited to one responsbility,  but I sometimes stretch my classes; find what works for you. An example of the SRP while creating a character in a video game engine such as Unity 3d would be: <br>
+"There should never be more than one reason for a class to change". I try to keep my functions limited to one responsbility,  but I sometimes stretch my classes; find what works for you. An example of the SRP while creating a character in a video game engine such as Unity 3d would be: <br>
     
 ```cs
 public class InputController
@@ -757,19 +757,19 @@ Plus many more (effects, sounds, etc)... You could tie this together as one big 
  </details>
    <details>
     <summary><b>Open-closed Principle</b></summary>
-  Software entities should be open for extension, but closed for modification.
+“A module should be open for extension but closed for modification.”
  </details>
     <details>
     <summary><b>Liskov substitution Principle</b></summary>
-  A program using a base class should be able to use any of its derived classes without knowing it, and without the program's correctness being affected. 
+  “Subclasses should be substitutable for their base classes.” A program using a base class should be able to use any of its derived classes without knowing it, and without the program's correctness being affected. 
    </details>
        <details>
     <summary><b>Interface Segregation Principle</b></summary>
-  “Clients should not be forced to depend upon interfaces that they do not use.”
+“Many client-specific interfaces are better than one general-purpose interface.”
    </details>
           <details>
     <summary><b>Dependency Inversion Principle</b></summary>
-  Temp
+  “Depend upon Abstractions. Do not depend upon concretions.”
    </details>
  </details>
  
