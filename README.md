@@ -729,7 +729,9 @@ You can read more about the principles from Robert C. Martin's "Design Principle
  </details>
   <details>
     <summary><b>Single Responsibility Principle</b></summary>
-"A class or module should have one, and only one, reason to change." I try to keep my functions limited to one responsbility,  but I sometimes stretch my classes; find what works for you. An example of the SRP while creating a character in a video game engine such as Unity 3d would be: <br>
+"A class or module should have one, and only one, reason to change." <br>
+<br>
+I try to keep my functions limited to one responsbility,  but I sometimes stretch my classes; find what works for you. An example of the SRP while creating a character in a video game engine such as Unity 3d would be: <br>
     
 ```cs
 public class InputController
