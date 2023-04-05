@@ -756,7 +756,7 @@ public class CharacterAnimations
   private void InitializeAnimations() // code
 }
 ```
-Plus many more (effects, sounds, etc)... You could tie this together as one big `PlayableCharacter` class but the code quickly becomes hard to maintain and would grow very large, along with of course, violating the SRP. Again, I personally do not take this principle to the extreme, as sometimes I find having a class group somethings together makes more logical sense to me. However, I am a strong advocate of a function should only do one thing.
+Plus many more (effects, sounds, etc)... You could tie this together as one big `PlayableCharacter` class but the code quickly becomes hard to maintain and would grow very large, along with of course, violating the SRP. Again, I personally do not take this principle to the extreme, as sometimes I find having a class group some things together makes more logical sense to me. However, I am a strong advocate of a function should only do one thing.
   
  </details>
    <details>
