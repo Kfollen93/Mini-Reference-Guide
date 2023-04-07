@@ -761,7 +761,50 @@ Plus many more (effects, sounds, etc)... You could tie this together as one big 
  </details>
    <details>
     <summary><b>Open-closed Principle</b></summary>
-“A module should be open for extension but closed for modification.” The point of this principle is to design your programs in a way that new requests can be implemented by writing new code, rather than changing existing code, which could potentially introduce new bugs, and complicate the code by now potentially making it do more than one thing with the new request. This is often done through relying on inheritance and/or interfaces rather than concrete types.
+“A module should be open for extension but closed for modification.” The point of this principle is to design your programs in a way that new requests can be implemented by writing new code, rather than changing existing code, which could potentially introduce new bugs, and complicate the code by now potentially making it do more than one thing with the new request. This is often done through relying on inheritance and/or interfaces rather than concrete types. A common example  of the OCP can be seen using calculating the area for shapes:
+<br>
+
+```cs
+public interface IShape
+{
+    double Area();
+}
+
+public class Rectangle : IShape
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public double Area()
+    {
+        return Width * Height;
+    }
+}
+
+public class Circle : IShape
+{
+    public double Radius { get; set; }
+
+    public double Area()
+    {
+        return Math.PI * Radius * Radius;
+    }
+}
+
+public class AreaCalculator
+{
+    public double TotalArea(IShape[] shapes)
+    {
+        double area = 0;
+        foreach (var shape in shapes)
+        {
+            area += shape.Area();
+        }
+        return area;
+    }
+}
+```
+     
  </details>
     <details>
     <summary><b>Liskov substitution Principle</b></summary>
