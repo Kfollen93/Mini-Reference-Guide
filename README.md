@@ -809,7 +809,55 @@ If a request came in to calculate the area for another shape, all we would need 
  </details>
     <details>
     <summary><b>Liskov substitution Principle</b></summary>
-  “Subclasses should be substitutable for their base classes.” A program using a base class should be able to use any of its derived classes without knowing it, and without the program's correctness being affected. 
+  “Subclasses should be substitutable for their base classes.” A program using a base class should be able to use any of its derived classes without knowing it, and without the program's correctness being affected. Following the shape example from the OCP: <br>
+<br>
+      
+```cs
+using System;
+
+class Shape
+{
+    public virtual double Area()
+    {
+        return 0;
+    }
+}
+
+class Rectangle : Shape
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public override double Area()
+    {
+        return Width * Height;
+    }
+}
+
+class Circle : Shape
+{
+    public double Radius { get; set; }
+
+    public override double Area()
+    {
+        return Math.PI * Radius * Radius;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Shape shape1 = new Rectangle { Width = 5, Height = 10 };
+        Shape shape2 = new Circle { Radius = 7 };
+
+        Console.WriteLine("Area of shape1: " + shape1.Area()); // Outputs: "Area of shape1: 50"
+        Console.WriteLine("Area of shape2: " + shape2.Area()); // Outputs: "Area of shape2: 154 (rounded)"
+    }
+}
+```
+We can substitute objects of the derived classes Rectangle and Circle for objects of the base class Shape without affecting the correctness of the program. This means that we can call the `Area()` method on variables of type Shape and the correct implementation from the respective subclass will be called at runtime, depending on the actual type of the object.
+      
    </details>
        <details>
     <summary><b>Interface Segregation Principle</b></summary>
