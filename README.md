@@ -804,7 +804,7 @@ public class AreaCalculator
     }
 }
 ```
-If a request came in to calculate the area for another shape, all we would need to do is create that new class and inherit from `IShape` with the defined `Area` function for that shape.
+If a request came in to calculate the area for another shape, all we would need to do is create that new class and inherit from `IShape` with the defined `Area` function for that shape. This also makes writing Unit Tests easier as the functionality for `TotalArea()` would not be changing at all.
      
  </details>
     <details>
