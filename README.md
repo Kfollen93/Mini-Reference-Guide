@@ -861,7 +861,7 @@ We can substitute objects of the derived classes Rectangle and Circle for object
    </details>
        <details>
     <summary><b>Interface Segregation Principle</b></summary>
-“Many client specific interfaces are better than one general purpose interface.”
+“Many client specific interfaces are better than one general purpose interface.” In other words, clients shouldn't depend on interfaces that they are not going to use. It is better to make your interfaces specific and smaller, rather than broad and not entirely relevant.
    </details>
           <details>
     <summary><b>Dependency Inversion Principle</b></summary>
