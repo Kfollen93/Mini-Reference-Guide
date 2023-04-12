@@ -1675,7 +1675,7 @@ Additionally, it's important to always unsubscribe to the function to prevent me
   </details>
       <details>
     <summary><b>Action</b></summary>
-      Temp
+      The Action delegate is typically used in scenarios where you want to pass around a reference to a method that takes no parameters and does not return a value.
   </details>
   <details>
    <summary><b>Event</b></summary>
