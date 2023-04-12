@@ -1691,10 +1691,6 @@ For example, you could accidentally assign a method, rather than subscribe to it
  public event EventHandler OnInteractAction;
  _gameInput.OnInteractAction = GameInput_OnInteractAction; // Will NOT compile, requires += or -=.
 ```
-
-
-
-
 The best explanation I've found is from Jon Skeet, the author of the "C# in Depth" books, from a StackOverFlow posts, where he commented: <br>
 
 *An event is fundamentally like a property - it's a pair of add/remove methods (instead of the get/set of a property). When you declare a field-like event (i.e. one where you don't specify the add/remove bits yourself) a public event is created, and a private backing field. This lets you raise the event privately, but allow public subscription. With a public delegate field, anyone can remove other people's event handlers, raise the event themselves, etc - it's an encapsulation disaster.<br>
@@ -1708,6 +1704,10 @@ public static event OnGameStart onGameStart;
 ```
 <br>
 However, another defining difference between a Delegate vs an Event is that delegates typically hold data (like a variable that holds a function), that can then be a parameter within a method. Contrast to delegates, events are closer to having an "event system" with sub/pub events.
+</details>
+      <details>
+   <summary><b>EventHandler</b></summary>
+     EventHandler is a delegate type that represents a method that is used to handle events. It is typically used to define event handlers for events raised by objects. An event handler is a method that gets called in response to a specific event occurring, and it typically takes two parameters: the object that raised the event (the sender), and event arguments that provide additional information about the event.
 </details>
 
 ## Miscellaneous
