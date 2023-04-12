@@ -1681,6 +1681,19 @@ Additionally, it's important to always unsubscribe to the function to prevent me
    <summary><b>Event</b></summary>
      Events are similar to delegates. The key difference being that events can only be called from their own class. This is not to be confused with subscribing/unsubscribing from other classes which you can still do, but rather other classes would not be able to clear the event by setting it to null (or any other value). Therefore, events abstract and confine delegates. <br>
      <br>
+    
+For example, you could accidentally assign a method, rather than subscribe to it:
+```cs
+ public EventHandler OnInteractAction;
+ _gameInput.OnInteractAction = GameInput_OnInteractAction; // Will compile, but the code is wrong, you need to subscribe, not assign.
+
+// When using the `event` keyword:
+ public event EventHandler OnInteractAction;
+ _gameInput.OnInteractAction = GameInput_OnInteractAction; // Will NOT compile, requires += or -=.
+```
+
+
+
 
 The best explanation I've found is from Jon Skeet, the author of the "C# in Depth" books, from a StackOverFlow posts, where he commented: <br>
 
