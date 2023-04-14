@@ -865,7 +865,7 @@ We can substitute objects of the derived classes Rectangle and Circle for object
    </details>
           <details>
     <summary><b>Dependency Inversion Principle</b></summary>
-  “Depend upon Abstractions. Do not depend upon concretions.” When abiding by the OCP and LSP, you would be inadvertently implementing this principle as well.
+  “Depend upon Abstractions. Do not depend upon concretions.” When abiding by the OCP and LSP, you would be inadvertently implementing this principle as well. High level modules do not depend on low level modules, but rather they both depend on the abstraction.
    </details>
  </details>
  
