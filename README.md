@@ -1707,7 +1707,40 @@ However, another defining difference between a Delegate vs an Event is that dele
 </details>
       <details>
    <summary><b>EventHandler</b></summary>
-     EventHandler is a delegate type that represents a method that is used to handle events. It is typically used to define event handlers for events raised by objects. An event handler is a method that gets called in response to a specific event occurring, and it typically takes two parameters: the object that raised the event (the sender), and event arguments that provide additional information about the event. You can pass empty EventArgs though as an argument if you do not have a need for additional data.
+     EventHandler is a delegate type that represents a method that is used to handle events. It is typically used to define event handlers for events raised by objects. An event handler is a method that gets called in response to a specific event occurring, and it typically takes two parameters: the object that raised the event (the sender), and event arguments that provide additional information about the event. You can pass empty EventArgs though as an argument if you do not have a need for additional data. <br>
+<br>
+```cs
+public class PlateKitchenObject : KitchenObject
+{
+    public event EventHandler<OnIgredientAddedEventArgs> OnIngredientAdded;
+    public class OnIgredientAddedEventArgs : EventArgs
+    {
+        public KitchenObjectSO _kitchenObjectSO;
+    }
+        
+        public void Example(KitchenObjectSO kitchenObjectSO)
+        {
+            OnIngredientAdded?.Invoke(this, new OnIgredientAddedEventArgs
+            {
+                _kitchenObjectSO = kitchenObjectSO
+            });
+        }
+    }
+}
+
+In a separate file subscribe to a method and utilize the EventArgs info that was passed:
+```cs
+    private void PlateKitchenObject_OnIngredientAdded(object sender, PlateKitchenObject.OnIgredientAddedEventArgs e)
+    {
+        foreach (var kitchenObjectSOGameObject in _kitchenObjectSOGameObjectList)
+        {
+            if (kitchenObjectSOGameObject.kitchenObjectSO == e._kitchenObjectSO)
+            {
+                kitchenObjectSOGameObject.gameObject.SetActive(true);
+            }
+        }
+    }
+```
 </details>
 
 ## Miscellaneous
