@@ -1707,7 +1707,7 @@ However, another defining difference between a Delegate vs an Event is that dele
 </details>
       <details>
    <summary><b>EventHandler</b></summary>
-     EventHandler is a delegate type that represents a method that is used to handle events. It is typically used to define event handlers for events raised by objects. An event handler is a method that gets called in response to a specific event occurring, and it typically takes two parameters: the object that raised the event (the sender), and event arguments that provide additional information about the event.
+     EventHandler is a delegate type that represents a method that is used to handle events. It is typically used to define event handlers for events raised by objects. An event handler is a method that gets called in response to a specific event occurring, and it typically takes two parameters: the object that raised the event (the sender), and event arguments that provide additional information about the event. You can pass empty EventArgs though as an argument if you do not have a need for additional data.
 </details>
 
 ## Miscellaneous
