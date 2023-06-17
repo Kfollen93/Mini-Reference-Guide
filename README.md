@@ -897,6 +897,29 @@ We can substitute objects of the derived classes Rectangle and Circle for object
   }
 ```
  </details>
+
+ <details>
+   <summary><b>Bubble Sort</b></summary>
+   Bubble Sort is the simplest sorting algorithm, but also the worst in terms of speed. This algorithm repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process keeps repeating, resulting in the larger elements "bubbling" up to the end. The time complexity of the Bubble Sort algorithm is <b>O(n^2)</b>, and space complexity is <b>O(1)</b>.
+
+```cs
+private static void BubbleSort(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        for (int j = i+1; j < arr.Length; j++)
+        {
+            if (arr[j] < arr[i])
+            {
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+```
+ </details>
   
  <details>
    <summary><b>Merge Sort</b></summary>
