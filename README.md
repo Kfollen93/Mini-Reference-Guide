@@ -1732,35 +1732,36 @@ However, another defining difference between a Delegate vs an Event is that dele
    <summary><b>EventHandler</b></summary>
      EventHandler is a delegate type that represents a method that is used to handle events. It is typically used to define event handlers for events raised by objects. An event handler is a method that gets called in response to a specific event occurring, and it typically takes two parameters: the object that raised the event (the sender), and event arguments that provide additional information about the event. You can pass empty EventArgs though as an argument if you do not have a need for additional data. <br>
 <br>
-```cs
-public class PlateKitchenObject : KitchenObject
-{
-    public event EventHandler<OnIgredientAddedEventArgs> OnIngredientAdded;
-    public class OnIgredientAddedEventArgs : EventArgs
-    {
-        public KitchenObjectSO _kitchenObjectSO;
-    }
-        
-        public void Example(KitchenObjectSO kitchenObjectSO)
-        {
-            OnIngredientAdded?.Invoke(this, new OnIgredientAddedEventArgs
-            {
-                _kitchenObjectSO = kitchenObjectSO
-            });
-        }
-    }
-}
 
+```cs
+public class ExampleClass
+{
+  public event EventHandler<OnSelectedExhibitChangedEventArgs> OnSelectedExhibitChanged;
+  public class OnSelectedExhibitChangedEventArgs : EventArgs
+  {
+      public Exhibit _selectedExhibitEventArg;
+  }
+  private void SetSelectedExhibit(Exhibit selectedExhibit)
+  {
+      _selectedExhibit = selectedExhibit;
+      OnSelectedExhibitChanged?.Invoke(this, new OnSelectedExhibitChangedEventArgs
+      {
+          _selectedExhibitEventArg = _selectedExhibit
+      });
+  }
+}
+```
 In a separate file subscribe to a method and utilize the EventArgs info that was passed:
 ```cs
-    private void PlateKitchenObject_OnIngredientAdded(object sender, PlateKitchenObject.OnIgredientAddedEventArgs e)
+private void Player_OnSelectedExhibitChanged(object sender, PlayerController.OnSelectedExhibitChangedEventArgs e)
     {
-        foreach (var kitchenObjectSOGameObject in _kitchenObjectSOGameObjectList)
+        if (e._selectedExhibitEventArg != null)
         {
-            if (kitchenObjectSOGameObject.kitchenObjectSO == e._kitchenObjectSO)
-            {
-                kitchenObjectSOGameObject.gameObject.SetActive(true);
-            }
+            SetExhibitInformation(e);
+        }
+        else
+        {
+            HideExhibitUI();
         }
     }
 ```
