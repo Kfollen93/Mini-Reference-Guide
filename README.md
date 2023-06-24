@@ -1754,16 +1754,16 @@ public class ExampleClass
 In a separate file subscribe to a method and utilize the EventArgs info that was passed:
 ```cs
 private void Player_OnSelectedExhibitChanged(object sender, PlayerController.OnSelectedExhibitChangedEventArgs e)
+{
+    if (e._selectedExhibitEventArg != null)
     {
-        if (e._selectedExhibitEventArg != null)
-        {
-            SetExhibitInformation(e);
-        }
-        else
-        {
-            HideExhibitUI();
-        }
+        SetExhibitInformation(e);
     }
+    else
+    {
+        HideExhibitUI();
+    }
+}
 ```
 </details>
 
