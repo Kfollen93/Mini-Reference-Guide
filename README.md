@@ -190,9 +190,7 @@ public static int[] Merge(int[] left, int[] right)
     }
     return sorted;
 }
-  ```
-</details>
-  
+  ```  
 <details>
   <summary><b>O(n<sup>2</sup></b>)</summary>
   O(n<sup>2</sup>) is represented as "Quadratic Time". You will most typically see this with nested loops (although do not fall victim to thinking if it is a nested loop that it is automatically Quadratic Time; this is not how you calculate time complexity). If you are looping through the outer array <b><i> n </i></b> times, then the inner loop will also need to run <b><i> n </i></b> times during each iteration of the outer loop (the square of n).  <br>
@@ -1027,6 +1025,17 @@ public static int[] Merge(int[] left, int[] right)
   return sorted;
 }
 ```
+
+<b>Strengths</b> <br>
+- More applicable in accessing data with slow access rates, typically tape drives and hard disks.
+- The size of the file does not adversely affect the performance.
+- It is good for sorting through data sets that are accessed in sequence.
+- Implements a stable sort.
+
+<b>Weaknesses</b> <br>
+- For an array of length N, the algorithm requires 2 x N memory space for execution. Requires more space than other algorithms.
+- Slower execution
+</details>
  </details>
   
  <details>
