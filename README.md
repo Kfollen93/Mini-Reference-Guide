@@ -919,6 +919,15 @@ private static void BubbleSort(int[] arr)
     }
 }
 ```
+
+<b>Strengths</b> <br>
+- It is easy to understand.
+- Easy to implement.
+- No demand for large amounts of memory.
+- Once sorted, data is available for processing. <br>
+
+<b>Weaknesses</b> <br>
+- Sorting takes a long time
  </details>
   
  <details>
