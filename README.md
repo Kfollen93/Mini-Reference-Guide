@@ -1098,6 +1098,14 @@ public static void Main(string[] args)
 
 */ 
 ```
+
+<b>Strengths</b> <br>
+- Suitable for sorting medium to large lists.
+- Highly efficient and therefore very popular.
+
+<b>Weaknesses</b> <br>
+- Difficult to implement the partitioning of the array.
+</details>
  </details>
   
 ## Binary Trees and Binary Search Trees
