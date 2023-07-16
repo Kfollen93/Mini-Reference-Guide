@@ -191,6 +191,7 @@ public static int[] Merge(int[] left, int[] right)
     return sorted;
 }
   ```  
+</details>
 <details>
   <summary><b>O(n<sup>2</sup></b>)</summary>
   O(n<sup>2</sup>) is represented as "Quadratic Time". You will most typically see this with nested loops (although do not fall victim to thinking if it is a nested loop that it is automatically Quadratic Time; this is not how you calculate time complexity). If you are looping through the outer array <b><i> n </i></b> times, then the inner loop will also need to run <b><i> n </i></b> times during each iteration of the outer loop (the square of n).  <br>
